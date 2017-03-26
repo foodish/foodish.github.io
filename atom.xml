@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://foodish.github.io/"/>
-  <updated>2017-03-26T17:41:14.586Z</updated>
+  <updated>2017-03-26T17:46:38.184Z</updated>
   <id>https://foodish.github.io/</id>
   
   <author>
@@ -20,9 +20,9 @@
     <link href="https://foodish.github.io/2017/03/26/%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1%E5%85%A5%E9%97%A8-Python/"/>
     <id>https://foodish.github.io/2017/03/26/程序设计入门-Python/</id>
     <published>2017-03-26T14:43:07.000Z</published>
-    <updated>2017-03-26T17:41:14.586Z</updated>
+    <updated>2017-03-26T17:46:38.184Z</updated>
     
-    <content type="html"><![CDATA[<h1 id="数据类型、运算符、变量赋值和简单I-O操作"><a href="#数据类型、运算符、变量赋值和简单I-O操作" class="headerlink" title="数据类型、运算符、变量赋值和简单I/O操作"></a>数据类型、运算符、变量赋值和简单I/O操作</h1><h2 id="对象与类型"><a href="#对象与类型" class="headerlink" title="对象与类型"></a>对象与类型</h2><h3 id="五种基本对象类型"><a href="#五种基本对象类型" class="headerlink" title="五种基本对象类型"></a>五种基本对象类型</h3><ol>
+    <content type="html"><![CDATA[<h1 id="1-数据类型、运算符、变量赋值和简单I-O操作"><a href="#1-数据类型、运算符、变量赋值和简单I-O操作" class="headerlink" title="1 数据类型、运算符、变量赋值和简单I/O操作"></a>1 数据类型、运算符、变量赋值和简单I/O操作</h1><h2 id="1-1-对象与类型"><a href="#1-1-对象与类型" class="headerlink" title="1.1 对象与类型"></a>1.1 对象与类型</h2><h3 id="五种基本对象类型"><a href="#五种基本对象类型" class="headerlink" title="五种基本对象类型"></a>五种基本对象类型</h3><ol>
 <li><p><strong>字符串，str</strong></p>
 <p>使用单引号、双引号、三引号括起来的一连串字符。</p>
 </li>
@@ -48,7 +48,7 @@
 <p><strong>3.30000000000000003</strong>(浮点数3.3无法在电脑中精确表示，有一定精度损失)</p>
 </li>
 </ul>
-<h2 id="算术运算"><a href="#算术运算" class="headerlink" title="算术运算"></a>算术运算</h2><table>
+<h2 id="1-2-算术运算"><a href="#1-2-算术运算" class="headerlink" title="1.2 算术运算"></a>1.2 算术运算</h2><table>
 <thead>
 <tr>
 <th>算术运算符</th>
@@ -98,9 +98,9 @@
 <li>math.pi</li>
 <li>math.e</li>
 </ul>
-<h2 id="关系运算符"><a href="#关系运算符" class="headerlink" title="关系运算符"></a>关系运算符</h2><p>x % 2 == 0  #等于</p>
+<h2 id="1-3-关系运算符"><a href="#1-3-关系运算符" class="headerlink" title="1.3 关系运算符"></a>1.3 关系运算符</h2><p>x % 2 == 0  #等于</p>
 <p>x % 2 != 0</p>
-<h2 id="逻辑运算符"><a href="#逻辑运算符" class="headerlink" title="逻辑运算符"></a>逻辑运算符</h2><table>
+<h2 id="1-4-逻辑运算符"><a href="#1-4-逻辑运算符" class="headerlink" title="1.4 逻辑运算符"></a>1.4 逻辑运算符</h2><table>
 <thead>
 <tr>
 <th>关系运算符</th>
@@ -138,8 +138,8 @@
 </ul>
 </li>
 </ul>
-<h2 id="运算符优先级"><a href="#运算符优先级" class="headerlink" title="运算符优先级"></a>运算符优先级</h2><p>​    <img src="F:\Documents\捕获.JPG" alt="捕获"></p>
-<h2 id="变量与I-O"><a href="#变量与I-O" class="headerlink" title="变量与I/O"></a>变量与I/O</h2><h4 id="变量，Variable"><a href="#变量，Variable" class="headerlink" title="变量，Variable"></a><strong>变量，Variable</strong></h4><h4 id="增量赋值运算符"><a href="#增量赋值运算符" class="headerlink" title="增量赋值运算符"></a><strong>增量赋值运算符</strong></h4><ul>
+<h2 id="1-5-运算符优先级"><a href="#1-5-运算符优先级" class="headerlink" title="1.5 运算符优先级"></a>1.5 运算符优先级</h2><p>​    <img src="F:\Documents\捕获.JPG" alt="捕获"></p>
+<h2 id="1-6-变量与I-O"><a href="#1-6-变量与I-O" class="headerlink" title="1.6 变量与I/O"></a>1.6 变量与I/O</h2><h4 id="变量，Variable"><a href="#变量，Variable" class="headerlink" title="变量，Variable"></a><strong>变量，Variable</strong></h4><h4 id="增量赋值运算符"><a href="#增量赋值运算符" class="headerlink" title="增量赋值运算符"></a><strong>增量赋值运算符</strong></h4><ul>
 <li><p>累加</p>
 <figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">count = count + <span class="number">1</span></div><div class="line"><span class="comment"># 简写为：</span></div><div class="line">count += <span class="number">1</span></div></pre></td></tr></table></figure>
 <p>| 增量赋值    | 等价表示        |<br>| ——- | :———- |<br>| x += 2  | x = x + 2   |<br>| x -= 2  | x = x - 2   |<br>| x <em>= 2  | x = x </em> 2   |<br>| x /= 2  | x = x / 2   |<br>| x %= 2  | x = x % 2   |<br>| x <strong>= 2 | x = x  </strong> 2 |</p>
@@ -150,13 +150,13 @@
 <p><strong>print</strong>函数</p>
 <p>输出到多行</p>
 <figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">print</span>（<span class="string">'hello\nworld!'</span>)</div></pre></td></tr></table></figure>
-<h1 id="程序控制结构"><a href="#程序控制结构" class="headerlink" title="程序控制结构"></a>程序控制结构</h1><h2 id="选择结构"><a href="#选择结构" class="headerlink" title="选择结构"></a>选择结构</h2><h3 id="程序流程图"><a href="#程序流程图" class="headerlink" title="程序流程图"></a>程序流程图</h3><h3 id="if语句"><a href="#if语句" class="headerlink" title="if语句"></a>if语句</h3><figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">score = <span class="number">70</span></div><div class="line"></div><div class="line"><span class="keyword">if</span> score &gt; <span class="number">60</span>:</div><div class="line">    print(<span class="string">'yes'</span>)</div><div class="line"><span class="keyword">else</span>:</div><div class="line">    print(<span class="string">'no'</span>)</div></pre></td></tr></table></figure>
+<h1 id="2-程序控制结构"><a href="#2-程序控制结构" class="headerlink" title="2 程序控制结构"></a>2 程序控制结构</h1><h2 id="2-1-选择结构"><a href="#2-1-选择结构" class="headerlink" title="2.1 选择结构"></a>2.1 选择结构</h2><h3 id="程序流程图"><a href="#程序流程图" class="headerlink" title="程序流程图"></a>程序流程图</h3><h3 id="if语句"><a href="#if语句" class="headerlink" title="if语句"></a>if语句</h3><figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">score = <span class="number">70</span></div><div class="line"></div><div class="line"><span class="keyword">if</span> score &gt; <span class="number">60</span>:</div><div class="line">    print(<span class="string">'yes'</span>)</div><div class="line"><span class="keyword">else</span>:</div><div class="line">    print(<span class="string">'no'</span>)</div></pre></td></tr></table></figure>
 <figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">score = <span class="number">70</span></div><div class="line">gender = <span class="string">'lady'</span></div><div class="line"></div><div class="line"><span class="keyword">if</span> score &gt; <span class="number">60</span>:</div><div class="line">    <span class="keyword">if</span> gender == <span class="string">'lady'</span>:</div><div class="line">    	print(<span class="string">'yes'</span>)</div></pre></td></tr></table></figure>
 <figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">score = <span class="number">70</span></div><div class="line">gender = <span class="string">'lady'</span></div><div class="line"></div><div class="line"><span class="keyword">if</span> score &gt; <span class="number">60</span> <span class="keyword">and</span> gender = <span class="string">'lady'</span>:</div><div class="line">    print(<span class="string">'yes'</span>)</div></pre></td></tr></table></figure>
 <figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div></pre></td><td class="code"><pre><div class="line">score = <span class="number">70</span></div><div class="line">gender = <span class="string">'lady'</span></div><div class="line"></div><div class="line"><span class="keyword">if</span> score &gt; <span class="number">80</span>:</div><div class="line">    print(<span class="string">'A'</span>)</div><div class="line"><span class="keyword">elif</span> score &gt; <span class="number">70</span>:</div><div class="line">    print(<span class="string">'B'</span>)</div><div class="line"><span class="keyword">else</span>:</div><div class="line">    print(<span class="string">'C'</span>)</div></pre></td></tr></table></figure>
 <h4 id="一元二次方程求解"><a href="#一元二次方程求解" class="headerlink" title="一元二次方程求解"></a>一元二次方程求解</h4><figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">import</span> math</div><div class="line"></div><div class="line">a = float(input(<span class="string">'a:'</span>))</div><div class="line">b = float(input(<span class="string">'b:'</span>))</div><div class="line">c = float(input(<span class="string">'c:'</span>))</div><div class="line"></div><div class="line"><span class="keyword">if</span> a == <span class="number">0</span>:</div><div class="line">    <span class="keyword">if</span> b != <span class="number">0</span>:</div><div class="line">        print(<span class="string">'solution is:'</span>, -c/b)</div><div class="line">    <span class="keyword">elif</span> c == <span class="number">0</span>:</div><div class="line">        print(<span class="string">'x is any num'</span>)</div><div class="line">    <span class="keyword">else</span>:</div><div class="line">    	print(<span class="string">'no solution'</span>)</div><div class="line"><span class="keyword">else</span>:</div><div class="line">    <span class="keyword">if</span> b**<span class="number">2</span><span class="number">-4</span>*a*c &lt; <span class="number">0</span>:</div><div class="line">        print(<span class="string">'no solution'</span>)</div><div class="line">    <span class="keyword">elif</span> b**<span class="number">2</span><span class="number">-4</span>*a*c == <span class="number">0</span>:</div><div class="line">        print(<span class="string">'solution is:'</span>, -b/<span class="number">2</span>/a)</div><div class="line">    <span class="keyword">else</span>:</div><div class="line">    	delta = math.sqrt(b**<span class="number">2</span><span class="number">-4</span>*a*c)</div><div class="line">        print(<span class="string">'solution is:'</span>, (-b-delta)/a/<span class="number">2</span>,(-b+delta)/a/<span class="number">2</span>)</div></pre></td></tr></table></figure>
 <h4 id="篮球比赛领先多少才安全"><a href="#篮球比赛领先多少才安全" class="headerlink" title="篮球比赛领先多少才安全"></a>篮球比赛领先多少才安全</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div></pre></td><td class="code"><pre><div class="line">score = int(input(&apos;forward score:&apos;))</div><div class="line">score -= 3</div><div class="line">has_ball = input(&apos;has ball(0/1);&apos;)</div><div class="line">time_remaining = float(input(&apos;time remmaining:&apos;))</div><div class="line"></div><div class="line">if has_ball == &apos;1&apos;:</div><div class="line">    score += 0.5</div><div class="line">else:</div><div class="line">    score -= 0.5</div><div class="line"></div><div class="line">if score &lt; 0:</div><div class="line">    score = 0</div><div class="line"></div><div class="line">score **= 2</div><div class="line">if score &gt; time_remaining:</div><div class="line">    print(&apos;safe&apos;)</div><div class="line">else:</div><div class="line">    print(&apos;not safe&apos;)</div></pre></td></tr></table></figure>
-<h2 id="循环结构"><a href="#循环结构" class="headerlink" title="循环结构"></a>循环结构</h2><h3 id="多次求一元二次方程"><a href="#多次求一元二次方程" class="headerlink" title="多次求一元二次方程"></a>多次求一元二次方程</h3><ol>
+<h2 id="2-2-循环结构"><a href="#2-2-循环结构" class="headerlink" title="2.2 循环结构"></a>2.2 循环结构</h2><h3 id="多次求一元二次方程"><a href="#多次求一元二次方程" class="headerlink" title="多次求一元二次方程"></a>多次求一元二次方程</h3><ol>
 <li><p><strong>while循环语句</strong></p>
 <p><strong>分析策略：</strong></p>
 <ul>
@@ -217,7 +217,7 @@ ch = input(&apos;enter q to exit:&apos;)
 </ul>
 </li>
 </ul>
-<h2 id="编程练习"><a href="#编程练习" class="headerlink" title="编程练习"></a>编程练习</h2><h3 id="二分法求平方根："><a href="#二分法求平方根：" class="headerlink" title="二分法求平方根："></a>二分法求平方根：</h3><ul>
+<h2 id="2-3-编程练习"><a href="#2-3-编程练习" class="headerlink" title="2.3 编程练习"></a>2.3 编程练习</h2><h3 id="二分法求平方根："><a href="#二分法求平方根：" class="headerlink" title="二分法求平方根："></a>二分法求平方根：</h3><ul>
 <li><p>基本思想</p>
 <ul>
 <li>猜测一个平方根（x/2)</li>
@@ -264,7 +264,7 @@ ch = input(&apos;enter q to exit:&apos;)
     
     <summary type="html">
     
-      &lt;h1 id=&quot;数据类型、运算符、变量赋值和简单I-O操作&quot;&gt;&lt;a href=&quot;#数据类型、运算符、变量赋值和简单I-O操作&quot; class=&quot;headerlink&quot; title=&quot;数据类型、运算符、变量赋值和简单I/O操作&quot;&gt;&lt;/a&gt;数据类型、运算符、变量赋值和简单I/O操作&lt;/
+      &lt;h1 id=&quot;1-数据类型、运算符、变量赋值和简单I-O操作&quot;&gt;&lt;a href=&quot;#1-数据类型、运算符、变量赋值和简单I-O操作&quot; class=&quot;headerlink&quot; title=&quot;1 数据类型、运算符、变量赋值和简单I/O操作&quot;&gt;&lt;/a&gt;1 数据类型、运算符、变量赋值和简
     
     </summary>
     
