@@ -275,7 +275,7 @@
               
                 
                 <a class="post-title-link" href="/2017/03/26/程序设计入门-Python/" itemprop="url">
-                  未命名
+                  程序设计入门-Python
                 </a>
               
             
@@ -291,7 +291,7 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-03-26T09:01:04+08:00">
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-03-26T22:43:07+08:00">
                 2017-03-26
               </time>
             
@@ -329,25 +329,22 @@
       
         
           
-            <h1 id="程序设计入门-Python"><a href="#程序设计入门-Python" class="headerlink" title="程序设计入门-Python"></a>程序设计入门-Python</h1><h2 id="1-数据类型、运算符、变量赋值和简单I-O操作"><a href="#1-数据类型、运算符、变量赋值和简单I-O操作" class="headerlink" title="1. 数据类型、运算符、变量赋值和简单I/O操作"></a>1. 数据类型、运算符、变量赋值和简单I/O操作</h2><h3 id="1-1-对象与类型"><a href="#1-1-对象与类型" class="headerlink" title="1.1 对象与类型"></a>1.1 对象与类型</h3><h4 id="五种基本对象类型"><a href="#五种基本对象类型" class="headerlink" title="五种基本对象类型"></a>五种基本对象类型</h4><ol>
-<li><strong>字符串，str</strong></li>
-</ol>
+            <h1 id="1-数据类型、运算符、变量赋值和简单I-O操作"><a href="#1-数据类型、运算符、变量赋值和简单I-O操作" class="headerlink" title="1. 数据类型、运算符、变量赋值和简单I/O操作"></a>1. 数据类型、运算符、变量赋值和简单I/O操作</h1><h2 id="1-1-对象与类型"><a href="#1-1-对象与类型" class="headerlink" title="1.1 对象与类型"></a>1.1 对象与类型</h2><h3 id="五种基本对象类型"><a href="#五种基本对象类型" class="headerlink" title="五种基本对象类型"></a>五种基本对象类型</h3><ol>
+<li><p><strong>字符串，str</strong></p>
 <p>使用单引号、双引号、三引号括起来的一连串字符。</p>
-<ol>
-<li><strong>整数，int</strong></li>
-</ol>
+</li>
+<li><p><strong>整数，int</strong></p>
 <p>支持十进制（21），八进制（025）和十六进制（0x15）</p>
-<ol>
-<li><strong>浮点数，float</strong></li>
-</ol>
+</li>
+<li><p><strong>浮点数，float</strong></p>
 <p><em>1.48</em>,  <em>21.0</em>， <em>21.</em>， <em>.21</em>,  <em>2.1E-2</em></p>
-<ol>
-<li><strong>布尔类型，bool</strong></li>
-</ol>
+</li>
+<li><p><strong>布尔类型，bool</strong></p>
 <p>True，False</p>
-<h4 id="对象类型"><a href="#对象类型" class="headerlink" title="对象类型"></a>对象类型</h4><ul>
-<li>type（）</li>
-</ul>
+</li>
+</ol>
+<h3 id="对象类型"><a href="#对象类型" class="headerlink" title="对象类型"></a>对象类型</h3><ul>
+<li><p>type（）</p>
 <p>$1+2</p>
 <p><strong>3</strong></p>
 <p>$’1’ + ‘2’</p>
@@ -356,7 +353,9 @@
 <p><strong>2.2</strong></p>
 <p>$1.1+1.1+1.1</p>
 <p><strong>3.30000000000000003</strong>(浮点数3.3无法在电脑中精确表示，有一定精度损失)</p>
-<h3 id="1-2-算术运算"><a href="#1-2-算术运算" class="headerlink" title="1.2 算术运算"></a>1.2 算术运算</h3><table>
+</li>
+</ul>
+<h2 id="1-2-算术运算"><a href="#1-2-算术运算" class="headerlink" title="1.2 算术运算"></a>1.2 算术运算</h2><table>
 <thead>
 <tr>
 <th>算术运算符</th>
@@ -388,10 +387,10 @@
 </tbody>
 </table>
 <p>**python2中“/“表示向下取整，因此5/9=0,需要写为5./9才对，python3则是表示正常除。</p>
-<h4 id="自动类型转换"><a href="#自动类型转换" class="headerlink" title="自动类型转换"></a>自动类型转换</h4><p><strong>参与运算的两个对象类型不同时，按照以下规则自动转换</strong></p>
+<h3 id="自动类型转换"><a href="#自动类型转换" class="headerlink" title="自动类型转换"></a>自动类型转换</h3><p><strong>参与运算的两个对象类型不同时，按照以下规则自动转换</strong></p>
 <p>*bool→int→float→complex</p>
 <p>如：1.0+3=4.0；True+3.0=4.0</p>
-<h4 id="求余运算应用"><a href="#求余运算应用" class="headerlink" title="求余运算应用"></a>求余运算应用</h4><p>今天是周六，10天之后是周几？</p>
+<h3 id="求余运算应用"><a href="#求余运算应用" class="headerlink" title="求余运算应用"></a>求余运算应用</h3><p>今天是周六，10天之后是周几？</p>
 <ul>
 <li>（6+10）%7=2</li>
 </ul>
@@ -399,16 +398,16 @@
 <ul>
 <li>if (x % 2 == 0)</li>
 </ul>
-<h4 id="math模块"><a href="#math模块" class="headerlink" title="math模块"></a>math模块</h4><p>import math  #引入math模块</p>
+<h3 id="math模块"><a href="#math模块" class="headerlink" title="math模块"></a>math模块</h3><p>import math  #引入math模块</p>
 <p>dir(math)  #列出math中的内容</p>
 <p>help（math.sin)  #帮助</p>
 <ul>
 <li>math.pi</li>
 <li>math.e</li>
 </ul>
-<h3 id="1-3-关系运算符"><a href="#1-3-关系运算符" class="headerlink" title="1.3 关系运算符"></a>1.3 关系运算符</h3><p>x % 2 == 0  #等于</p>
+<h2 id="1-3-关系运算符"><a href="#1-3-关系运算符" class="headerlink" title="1.3 关系运算符"></a>1.3 关系运算符</h2><p>x % 2 == 0  #等于</p>
 <p>x % 2 != 0</p>
-<h3 id="1-4-逻辑运算符"><a href="#1-4-逻辑运算符" class="headerlink" title="1.4 逻辑运算符"></a>1.4 逻辑运算符</h3><table>
+<h2 id="1-4-逻辑运算符"><a href="#1-4-逻辑运算符" class="headerlink" title="1.4 逻辑运算符"></a>1.4 逻辑运算符</h2><table>
 <thead>
 <tr>
 <th>关系运算符</th>
@@ -446,8 +445,8 @@
 </ul>
 </li>
 </ul>
-<h3 id="1-5-运算符优先级"><a href="#1-5-运算符优先级" class="headerlink" title="1.5 运算符优先级"></a>1.5 运算符优先级</h3><p>​    <img src="F:\Documents\捕获.JPG" alt="捕获"></p>
-<h3 id="1-6-变量与I-O"><a href="#1-6-变量与I-O" class="headerlink" title="1.6 变量与I/O"></a>1.6 变量与I/O</h3><h4 id="变量，Variable"><a href="#变量，Variable" class="headerlink" title="变量，Variable"></a><strong>变量，Variable</strong></h4><h4 id="增量赋值运算符"><a href="#增量赋值运算符" class="headerlink" title="增量赋值运算符"></a><strong>增量赋值运算符</strong></h4><ul>
+<h2 id="1-5-运算符优先级"><a href="#1-5-运算符优先级" class="headerlink" title="1.5 运算符优先级"></a>1.5 运算符优先级</h2><p>​    <img src="F:\Documents\捕获.JPG" alt="捕获"></p>
+<h2 id="1-6-变量与I-O"><a href="#1-6-变量与I-O" class="headerlink" title="1.6 变量与I/O"></a>1.6 变量与I/O</h2><h4 id="变量，Variable"><a href="#变量，Variable" class="headerlink" title="变量，Variable"></a><strong>变量，Variable</strong></h4><h4 id="增量赋值运算符"><a href="#增量赋值运算符" class="headerlink" title="增量赋值运算符"></a><strong>增量赋值运算符</strong></h4><ul>
 <li><p>累加</p>
 <figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">count = count + <span class="number">1</span></div><div class="line"><span class="comment"># 简写为：</span></div><div class="line">count += <span class="number">1</span></div></pre></td></tr></table></figure>
 <p>| 增量赋值    | 等价表示        |<br>| ——- | :———- |<br>| x += 2  | x = x + 2   |<br>| x -= 2  | x = x - 2   |<br>| x <em>= 2  | x = x </em> 2   |<br>| x /= 2  | x = x / 2   |<br>| x %= 2  | x = x % 2   |<br>| x <strong>= 2 | x = x  </strong> 2 |</p>
@@ -458,13 +457,13 @@
 <p><strong>print</strong>函数</p>
 <p>输出到多行</p>
 <figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">print</span>（<span class="string">'hello\nworld!'</span>)</div></pre></td></tr></table></figure>
-<h2 id="2-程序控制结构"><a href="#2-程序控制结构" class="headerlink" title="2. 程序控制结构"></a>2. 程序控制结构</h2><h3 id="2-1-选择结构"><a href="#2-1-选择结构" class="headerlink" title="2.1 选择结构"></a>2.1 选择结构</h3><h4 id="2-1-1-程序流程图"><a href="#2-1-1-程序流程图" class="headerlink" title="2.1.1 程序流程图"></a>2.1.1 程序流程图</h4><h4 id="2-1-2-if语句"><a href="#2-1-2-if语句" class="headerlink" title="2.1.2 if语句"></a>2.1.2 if语句</h4><figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">score = <span class="number">70</span></div><div class="line"></div><div class="line"><span class="keyword">if</span> score &gt; <span class="number">60</span>:</div><div class="line">    print(<span class="string">'yes'</span>)</div><div class="line"><span class="keyword">else</span>:</div><div class="line">    print(<span class="string">'no'</span>)</div></pre></td></tr></table></figure>
+<h1 id="2-程序控制结构"><a href="#2-程序控制结构" class="headerlink" title="2. 程序控制结构"></a>2. 程序控制结构</h1><h2 id="2-1-选择结构"><a href="#2-1-选择结构" class="headerlink" title="2.1 选择结构"></a>2.1 选择结构</h2><h3 id="2-1-1-程序流程图"><a href="#2-1-1-程序流程图" class="headerlink" title="2.1.1 程序流程图"></a>2.1.1 程序流程图</h3><h3 id="2-1-2-if语句"><a href="#2-1-2-if语句" class="headerlink" title="2.1.2 if语句"></a>2.1.2 if语句</h3><figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">score = <span class="number">70</span></div><div class="line"></div><div class="line"><span class="keyword">if</span> score &gt; <span class="number">60</span>:</div><div class="line">    print(<span class="string">'yes'</span>)</div><div class="line"><span class="keyword">else</span>:</div><div class="line">    print(<span class="string">'no'</span>)</div></pre></td></tr></table></figure>
 <figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">score = <span class="number">70</span></div><div class="line">gender = <span class="string">'lady'</span></div><div class="line"></div><div class="line"><span class="keyword">if</span> score &gt; <span class="number">60</span>:</div><div class="line">    <span class="keyword">if</span> gender == <span class="string">'lady'</span>:</div><div class="line">    	print(<span class="string">'yes'</span>)</div></pre></td></tr></table></figure>
 <figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">score = <span class="number">70</span></div><div class="line">gender = <span class="string">'lady'</span></div><div class="line"></div><div class="line"><span class="keyword">if</span> score &gt; <span class="number">60</span> <span class="keyword">and</span> gender = <span class="string">'lady'</span>:</div><div class="line">    print(<span class="string">'yes'</span>)</div></pre></td></tr></table></figure>
 <figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div></pre></td><td class="code"><pre><div class="line">score = <span class="number">70</span></div><div class="line">gender = <span class="string">'lady'</span></div><div class="line"></div><div class="line"><span class="keyword">if</span> score &gt; <span class="number">80</span>:</div><div class="line">    print(<span class="string">'A'</span>)</div><div class="line"><span class="keyword">elif</span> score &gt; <span class="number">70</span>:</div><div class="line">    print(<span class="string">'B'</span>)</div><div class="line"><span class="keyword">else</span>:</div><div class="line">    print(<span class="string">'C'</span>)</div></pre></td></tr></table></figure>
 <h4 id="一元二次方程求解"><a href="#一元二次方程求解" class="headerlink" title="一元二次方程求解"></a>一元二次方程求解</h4><figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">import</span> math</div><div class="line"></div><div class="line">a = float(input(<span class="string">'a:'</span>))</div><div class="line">b = float(input(<span class="string">'b:'</span>))</div><div class="line">c = float(input(<span class="string">'c:'</span>))</div><div class="line"></div><div class="line"><span class="keyword">if</span> a == <span class="number">0</span>:</div><div class="line">    <span class="keyword">if</span> b != <span class="number">0</span>:</div><div class="line">        print(<span class="string">'solution is:'</span>, -c/b)</div><div class="line">    <span class="keyword">elif</span> c == <span class="number">0</span>:</div><div class="line">        print(<span class="string">'x is any num'</span>)</div><div class="line">    <span class="keyword">else</span>:</div><div class="line">    	print(<span class="string">'no solution'</span>)</div><div class="line"><span class="keyword">else</span>:</div><div class="line">    <span class="keyword">if</span> b**<span class="number">2</span><span class="number">-4</span>*a*c &lt; <span class="number">0</span>:</div><div class="line">        print(<span class="string">'no solution'</span>)</div><div class="line">    <span class="keyword">elif</span> b**<span class="number">2</span><span class="number">-4</span>*a*c == <span class="number">0</span>:</div><div class="line">        print(<span class="string">'solution is:'</span>, -b/<span class="number">2</span>/a)</div><div class="line">    <span class="keyword">else</span>:</div><div class="line">    	delta = math.sqrt(b**<span class="number">2</span><span class="number">-4</span>*a*c)</div><div class="line">        print(<span class="string">'solution is:'</span>, (-b-delta)/a/<span class="number">2</span>,(-b+delta)/a/<span class="number">2</span>)</div></pre></td></tr></table></figure>
 <h4 id="篮球比赛领先多少才安全"><a href="#篮球比赛领先多少才安全" class="headerlink" title="篮球比赛领先多少才安全"></a>篮球比赛领先多少才安全</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div></pre></td><td class="code"><pre><div class="line">score = int(input(&apos;forward score:&apos;))</div><div class="line">score -= 3</div><div class="line">has_ball = input(&apos;has ball(0/1);&apos;)</div><div class="line">time_remaining = float(input(&apos;time remmaining:&apos;))</div><div class="line"></div><div class="line">if has_ball == &apos;1&apos;:</div><div class="line">    score += 0.5</div><div class="line">else:</div><div class="line">    score -= 0.5</div><div class="line"></div><div class="line">if score &lt; 0:</div><div class="line">    score = 0</div><div class="line"></div><div class="line">score **= 2</div><div class="line">if score &gt; time_remaining:</div><div class="line">    print(&apos;safe&apos;)</div><div class="line">else:</div><div class="line">    print(&apos;not safe&apos;)</div></pre></td></tr></table></figure>
-<h3 id="2-2-循环结构"><a href="#2-2-循环结构" class="headerlink" title="2.2 循环结构"></a>2.2 循环结构</h3><h4 id="多次求一元二次方程"><a href="#多次求一元二次方程" class="headerlink" title="多次求一元二次方程"></a>多次求一元二次方程</h4><ol>
+<h2 id="2-2-循环结构"><a href="#2-2-循环结构" class="headerlink" title="2.2 循环结构"></a>2.2 循环结构</h2><h3 id="多次求一元二次方程"><a href="#多次求一元二次方程" class="headerlink" title="多次求一元二次方程"></a>多次求一元二次方程</h3><ol>
 <li><p><strong>while循环语句</strong></p>
 <p><strong>分析策略：</strong></p>
 <ul>
@@ -513,7 +512,7 @@ ch = input(&apos;enter q to exit:&apos;)
 <p><strong>鸡兔同笼</strong>（穷举法）</p>
 <p>鸡兔同笼，35头，94足</p>
 <figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">for</span> chickens <span class="keyword">in</span> range(<span class="number">35</span>+<span class="number">1</span>):</div><div class="line">	<span class="keyword">for</span> rabbits <span class="keyword">in</span> range(<span class="number">35</span>+<span class="number">1</span>):</div><div class="line">		<span class="keyword">if</span> <span class="number">2</span> * chickens + <span class="number">4</span> * rabbits == <span class="number">94</span> <span class="keyword">and</span> chickens + rabbits == <span class="number">35</span>:</div><div class="line">			print(<span class="string">'chickens numbers:'</span>, chickens)</div><div class="line">			print(<span class="string">'rabbits numbers:'</span>, rabbits)</div></pre></td></tr></table></figure>
-<h4 id="while-vs-for-循环"><a href="#while-vs-for-循环" class="headerlink" title="while vs. for 循环"></a>while vs. for 循环</h4></li>
+<h3 id="while-vs-for-循环"><a href="#while-vs-for-循环" class="headerlink" title="while vs. for 循环"></a>while vs. for 循环</h3></li>
 </ol>
 <ul>
 <li><p>while循环更通用</p>
@@ -525,7 +524,7 @@ ch = input(&apos;enter q to exit:&apos;)
 </ul>
 </li>
 </ul>
-<h3 id="2-3-编程练习"><a href="#2-3-编程练习" class="headerlink" title="2.3 编程练习"></a>2.3 编程练习</h3><h4 id="二分法求平方根："><a href="#二分法求平方根：" class="headerlink" title="二分法求平方根："></a>二分法求平方根：</h4><ul>
+<h2 id="2-3-编程练习"><a href="#2-3-编程练习" class="headerlink" title="2.3 编程练习"></a>2.3 编程练习</h2><h4 id="二分法求平方根："><a href="#二分法求平方根：" class="headerlink" title="二分法求平方根："></a>二分法求平方根：</h4><ul>
 <li><p>基本思想</p>
 <ul>
 <li>猜测一个平方根（x/2)</li>
@@ -547,22 +546,34 @@ ch = input(&apos;enter q to exit:&apos;)
 <figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div></pre></td><td class="code"><pre><div class="line">x = float(input(<span class="string">'enter a number:'</span>))</div><div class="line"></div><div class="line">low = <span class="number">0</span></div><div class="line">high = x</div><div class="line">guess = (low + high) / <span class="number">2</span></div><div class="line"></div><div class="line"><span class="keyword">while</span> abs(guess ** <span class="number">2</span> - x) &gt; <span class="number">1e-5</span>:</div><div class="line">    <span class="keyword">if</span> guess ** <span class="number">2</span> &lt; x:</div><div class="line">        low = guess</div><div class="line">    <span class="keyword">else</span>:</div><div class="line">        high = guess</div><div class="line">    guess = (high + low) / <span class="number">2</span></div><div class="line"></div><div class="line">print(<span class="string">'root of x is:'</span>, guess)</div></pre></td></tr></table></figure>
 <p>对于上面的程序，当x&lt;0或x&lt;1时将不成立</p>
 <figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div></pre></td><td class="code"><pre><div class="line">x = float(input(<span class="string">'enter a number:'</span>))</div><div class="line"></div><div class="line"><span class="keyword">if</span> x &lt; <span class="number">0</span>:</div><div class="line">    print(<span class="string">'no root'</span>)</div><div class="line"><span class="keyword">elif</span> x &lt; <span class="number">1</span>:</div><div class="line">    low = x</div><div class="line">    high = <span class="number">1</span></div><div class="line">    guess = (low + high) / <span class="number">2</span></div><div class="line">    <span class="keyword">while</span> abs(guess ** <span class="number">2</span> - x) &gt;<span class="number">1e-6</span>:</div><div class="line">        <span class="keyword">if</span> guess ** <span class="number">2</span> &gt; x:</div><div class="line">            high = guess</div><div class="line">        <span class="keyword">else</span>:</div><div class="line">            low = guess</div><div class="line">        guess = (high + low) / <span class="number">2</span></div><div class="line">    print(<span class="string">'root of x is:'</span>, guess)</div><div class="line"><span class="keyword">else</span>:</div><div class="line">    low = <span class="number">0</span></div><div class="line">    high = x</div><div class="line">    guess = (low + high) / <span class="number">2</span></div><div class="line"></div><div class="line">    <span class="keyword">while</span> abs(guess ** <span class="number">2</span> - x) &gt; <span class="number">1e-6</span>:</div><div class="line">        <span class="keyword">if</span> guess ** <span class="number">2</span> &lt; x:</div><div class="line">            low = guess</div><div class="line">        <span class="keyword">else</span>:</div><div class="line">            high = guess</div><div class="line">        guess = (high + low) / <span class="number">2</span></div><div class="line"></div><div class="line">    print(<span class="string">'root of x is:'</span>, guess)</div></pre></td></tr></table></figure>
-<h4 id="识别素数"><a href="#识别素数" class="headerlink" title="识别素数"></a><strong>识别素数</strong></h4><figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line">n = int(input(<span class="string">'enter a int number:'</span>))</div><div class="line"></div><div class="line"><span class="keyword">for</span> i <span class="keyword">in</span> range(<span class="number">2</span>, n):</div><div class="line">    <span class="keyword">if</span> n % i == <span class="number">0</span>:</div><div class="line">        print(<span class="string">'not a prime'</span>)</div><div class="line">        <span class="keyword">break</span></div><div class="line">    <span class="keyword">else</span>:</div><div class="line">        print(<span class="string">'is a prime'</span>)</div></pre></td></tr></table></figure>
-<p>上面是素数时每次不被整除都会输出</p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line">n = int(input(<span class="string">'enter a int number:'</span>))</div><div class="line"></div><div class="line"><span class="keyword">for</span> i <span class="keyword">in</span> range(<span class="number">2</span>, n):</div><div class="line">    <span class="keyword">if</span> n % i == <span class="number">0</span>:</div><div class="line">        print(n, <span class="string">'not a prime'</span>)</div><div class="line">        <span class="keyword">break</span></div><div class="line"><span class="keyword">else</span>:</div><div class="line">    print(n, <span class="string">'is a prime'</span>)</div></pre></td></tr></table></figure>
-<p>前50个素数</p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div></pre></td><td class="code"><pre><div class="line"><span class="comment"># 可以通过缩小范围加快速度</span></div><div class="line">print(<span class="string">'2 is a prime'</span>)</div><div class="line">count = <span class="number">1</span></div><div class="line"><span class="keyword">for</span> n <span class="keyword">in</span> range(<span class="number">3</span>, <span class="number">500</span>, <span class="number">2</span>):</div><div class="line">    <span class="keyword">if</span> n % <span class="number">2</span> == <span class="number">0</span>:</div><div class="line">        <span class="keyword">continue</span></div><div class="line">        <span class="comment"># print(n, 'not a prime')</span></div><div class="line">    <span class="keyword">else</span>:</div><div class="line">        <span class="keyword">for</span> i <span class="keyword">in</span> range(<span class="number">3</span>, n - <span class="number">1</span>, <span class="number">2</span>):</div><div class="line">            <span class="keyword">if</span> n % i == <span class="number">0</span>:</div><div class="line">                <span class="comment">#print(n, 'not a prime')</span></div><div class="line">                <span class="keyword">break</span></div><div class="line">        <span class="keyword">else</span>:</div><div class="line">            print(n, <span class="string">'is a prime'</span>)</div><div class="line">            count += <span class="number">1</span></div><div class="line">        <span class="keyword">if</span> count == <span class="number">50</span>:</div><div class="line">            <span class="keyword">break</span></div></pre></td></tr></table></figure>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div></pre></td><td class="code"><pre><div class="line"><span class="comment"># 算法</span></div><div class="line"><span class="keyword">import</span> math</div><div class="line"></div><div class="line">count = <span class="number">0</span></div><div class="line">num = <span class="number">2</span></div><div class="line"></div><div class="line"><span class="keyword">while</span> count &lt; <span class="number">50</span>:</div><div class="line">    <span class="keyword">for</span> i <span class="keyword">in</span> range(<span class="number">2</span>, int(math.sqrt(num)) + <span class="number">1</span>):</div><div class="line">        <span class="keyword">if</span> num % i == <span class="number">0</span>:</div><div class="line">            <span class="keyword">break</span></div><div class="line">    <span class="keyword">else</span>:</div><div class="line">        print(num)</div><div class="line">        count += <span class="number">1</span></div><div class="line">    num += <span class="number">1</span></div></pre></td></tr></table></figure>
-<h4 id="回文数"><a href="#回文数" class="headerlink" title="回文数"></a>回文数</h4></li>
-<li><p>求 n的逆序n‘；</p>
+<h4 id="识别素数"><a href="#识别素数" class="headerlink" title="识别素数"></a><strong>识别素数</strong></h4><p>​<figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div></pre></td><td class="code"><pre><div class="line">n = int(input(<span class="string">'enter a int number:'</span>))</div><div class="line"></div><div class="line"><span class="keyword">for</span> i <span class="keyword">in</span> range(<span class="number">2</span>, n):</div><div class="line">    <span class="keyword">if</span> n % i == <span class="number">0</span>:</div><div class="line">        print(<span class="string">'not a prime'</span>)</div><div class="line">        <span class="keyword">break</span></div><div class="line">    <span class="keyword">else</span>:</div><div class="line">        print(<span class="string">'is a prime'</span>)</div><div class="line">​</div></pre></td></tr></table></figure></p>
 </li>
-<li><p>如果n == n’，则为回文数</p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line"><span class="comment">#转化为字符串问题</span></div><div class="line">n = input(<span class="string">'enter a number:'</span>)</div><div class="line">n_new = n[::<span class="number">-1</span>]</div><div class="line"><span class="keyword">if</span> n == n_new:</div><div class="line">    print(<span class="string">'yes'</span>)</div><div class="line"><span class="keyword">else</span>:</div><div class="line">    print(<span class="string">'no'</span>)</div></pre></td></tr></table></figure>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div></pre></td><td class="code"><pre><div class="line"><span class="comment">#一般解法</span></div><div class="line">num = int(input(<span class="string">'enter a number:'</span>))</div><div class="line">num_temp = num</div><div class="line">num_prime = <span class="number">0</span></div><div class="line"></div><div class="line"><span class="keyword">while</span> num_temp != <span class="number">0</span>:</div><div class="line">    num_prime = num_prime * <span class="number">10</span> + num_temp % <span class="number">10</span> <span class="comment">#余数留给新的数字，并每次乘以10</span></div><div class="line">    num_temp //= <span class="number">10</span>  <span class="comment"># 原来数字每次向右移动一位，123→12</span></div><div class="line"><span class="keyword">if</span> num == num_prime:</div><div class="line">    print(<span class="string">'yes'</span>)</div><div class="line"><span class="keyword">else</span>:</div><div class="line">    print(<span class="string">'no'</span>)</div></pre></td></tr></table></figure></li>
 </ul>
 </li>
 </ul>
+<pre><code>上面是素数时每次不被整除都会输出
 
+​<figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div></pre></td><td class="code"><pre><div class="line">n = int(input(<span class="string">'enter a int number:'</span>))</div><div class="line"></div><div class="line"><span class="keyword">for</span> i <span class="keyword">in</span> range(<span class="number">2</span>, n):</div><div class="line">    <span class="keyword">if</span> n % i == <span class="number">0</span>:</div><div class="line">        print(n, <span class="string">'not a prime'</span>)</div><div class="line">        <span class="keyword">break</span></div><div class="line"><span class="keyword">else</span>:</div><div class="line">    print(n, <span class="string">'is a prime'</span>)</div><div class="line">​</div></pre></td></tr></table></figure>
+
+
+前50个素数
+
+​<figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div></pre></td><td class="code"><pre><div class="line"><span class="comment"># 可以通过缩小范围加快速度</span></div><div class="line">print(<span class="string">'2 is a prime'</span>)</div><div class="line">count = <span class="number">1</span></div><div class="line"><span class="keyword">for</span> n <span class="keyword">in</span> range(<span class="number">3</span>, <span class="number">500</span>, <span class="number">2</span>):</div><div class="line">    <span class="keyword">if</span> n % <span class="number">2</span> == <span class="number">0</span>:</div><div class="line">        <span class="keyword">continue</span></div><div class="line">        <span class="comment"># print(n, 'not a prime')</span></div><div class="line">    <span class="keyword">else</span>:</div><div class="line">        <span class="keyword">for</span> i <span class="keyword">in</span> range(<span class="number">3</span>, n - <span class="number">1</span>, <span class="number">2</span>):</div><div class="line">            <span class="keyword">if</span> n % i == <span class="number">0</span>:</div><div class="line">                <span class="comment">#print(n, 'not a prime')</span></div><div class="line">                <span class="keyword">break</span></div><div class="line">        <span class="keyword">else</span>:</div><div class="line">            print(n, <span class="string">'is a prime'</span>)</div><div class="line">            count += <span class="number">1</span></div><div class="line">        <span class="keyword">if</span> count == <span class="number">50</span>:</div><div class="line">            <span class="keyword">break</span></div><div class="line">​</div></pre></td></tr></table></figure>
+
+
+​<figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div></pre></td><td class="code"><pre><div class="line"><span class="comment"># 算法</span></div><div class="line"><span class="keyword">import</span> math</div><div class="line"></div><div class="line">count = <span class="number">0</span></div><div class="line">num = <span class="number">2</span></div><div class="line"></div><div class="line"><span class="keyword">while</span> count &lt; <span class="number">50</span>:</div><div class="line">    <span class="keyword">for</span> i <span class="keyword">in</span> range(<span class="number">2</span>, int(math.sqrt(num)) + <span class="number">1</span>):</div><div class="line">        <span class="keyword">if</span> num % i == <span class="number">0</span>:</div><div class="line">            <span class="keyword">break</span></div><div class="line">    <span class="keyword">else</span>:</div><div class="line">        print(num)</div><div class="line">        count += <span class="number">1</span></div><div class="line">    num += <span class="number">1</span></div><div class="line">​</div></pre></td></tr></table></figure>
+
+
+#### 回文数
+
+* 求 n的逆序n‘；
+* 如果n == n&apos;，则为回文数
+
+​<figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line"><span class="comment">#转化为字符串问题</span></div><div class="line">n = input(<span class="string">'enter a number:'</span>)</div><div class="line">n_new = n[::<span class="number">-1</span>]</div><div class="line"><span class="keyword">if</span> n == n_new:</div><div class="line">    print(<span class="string">'yes'</span>)</div><div class="line"><span class="keyword">else</span>:</div><div class="line">    print(<span class="string">'no'</span>)</div><div class="line">​</div></pre></td></tr></table></figure>
+
+
+​<figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div></pre></td><td class="code"><pre><div class="line"><span class="comment">#一般解法</span></div><div class="line">num = int(input(<span class="string">'enter a number:'</span>))</div><div class="line">num_temp = num</div><div class="line">num_prime = <span class="number">0</span></div><div class="line"></div><div class="line"><span class="keyword">while</span> num_temp != <span class="number">0</span>:</div><div class="line">    num_prime = num_prime * <span class="number">10</span> + num_temp % <span class="number">10</span> <span class="comment">#余数留给新的数字，并每次乘以10</span></div><div class="line">    num_temp //= <span class="number">10</span>  <span class="comment"># 原来数字每次向右移动一位，123→12</span></div><div class="line"><span class="keyword">if</span> num == num_prime:</div><div class="line">    print(<span class="string">'yes'</span>)</div><div class="line"><span class="keyword">else</span>:</div><div class="line">    print(<span class="string">'no'</span>)</div><div class="line">​</div></pre></td></tr></table></figure>
+</code></pre>
           
         
       
@@ -899,7 +910,7 @@ ch = input(&apos;enter q to exit:&apos;)
             
             <div class="site-state-item site-state-tags">
               
-                <span class="site-state-item-count">1</span>
+                <span class="site-state-item-count">2</span>
                 <span class="site-state-item-name">标签</span>
               
             </div>
