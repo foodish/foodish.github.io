@@ -586,17 +586,14 @@ reference 可以是：图片链接、网址链接、#章节标题。图片时最
 </code></pre><blockquote>
 <p>这里是引用文字</p>
 </blockquote>
-<h3 id="1-8-代码"><a href="#1-8-代码" class="headerlink" title="1.8 代码"></a>1.8 代码</h3><pre><code>插入代码块只需要单地缩进 4 个空格或是 1 个制表符即可，即按下tab即可
-
-需要引用代码时，如果引用的语句只有一段，不分行，可以用 ` 将语句包起来。
-如果引用的语句为多行，可以将<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">如</div><div class="line"></div><div class="line">`if a &lt; b: a = 1 else a = 2`</div></pre></td></tr></table></figure>
-
-if a &lt; b :
+<h3 id="1-8-代码"><a href="#1-8-代码" class="headerlink" title="1.8 代码"></a>1.8 代码</h3><p>插入代码块只需要单地缩进 4 个空格或是 1 个制表符即可，即按下tab即可</p>
+<p>需要引用代码时，如果引用的语句只有一段，不分行，可以用 ` 将语句包起来。<br>如果引用的语句为多行，可以将<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">如</div><div class="line"></div><div class="line">    `if a &lt; b: a = 1 else a = 2`</div><div class="line"></div><div class="line">多行代码如下</div></pre></td></tr></table></figure></p>
+<pre><code>if a &lt; b :
     a = 1
 else
     a = 2
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">    效果如下</div><div class="line"></div><div class="line">`if a &lt; b: a = 1 else a = 2`</div></pre></td></tr></table></figure>
-</code></pre><p>if a &lt; b :<br>    a = 1<br>else<br>    a = 2<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div><div class="line">40</div><div class="line">41</div><div class="line">42</div><div class="line">43</div><div class="line">44</div></pre></td><td class="code"><pre><div class="line"></div><div class="line">### 1.9 分割线</div><div class="line"></div><div class="line">    在一行中用三个以上的星号、减号、底线来建立一个分隔线，行内不能有其他东西。你也可以在星号或是减号中间插入空格。如</div><div class="line">    ***</div><div class="line">    ---</div><div class="line">    ___</div><div class="line">    * * *</div><div class="line">    效果如下：</div><div class="line"></div><div class="line">***</div><div class="line"></div><div class="line">---</div><div class="line"></div><div class="line">___</div><div class="line"></div><div class="line">* * * </div><div class="line"></div><div class="line">## 2. GitHub Flavored Markdown</div><div class="line"></div><div class="line">参考[github官方文档](https://help.github.com/categories/writing-on-github/)</div><div class="line"></div><div class="line">GFM使用了[Linguist](https://github.com/github/linguist)进行语言检测和语法高亮，能为几乎各种语言渲染出漂亮的样式。</div><div class="line"></div><div class="line">### 2.1 下划线</div><div class="line"></div><div class="line">单词中如果有_的话，GFM会忽略，而不会变成斜体！例如，单词wow_great_stuff中的great不会变成斜体。</div><div class="line"></div><div class="line"></div><div class="line">### 2.2 删除线</div><div class="line">    </div><div class="line">    文字放在一组~~之间即可，如</div><div class="line">    ~~删除线~~</div><div class="line">    效果如下</div><div class="line"></div><div class="line">~~删除线~~</div><div class="line"></div><div class="line">### 2.3 语法高亮</div><div class="line"></div><div class="line">    可以在```之间敲入代码，并提示编程语言，例如python。</div><div class="line"></div><div class="line">    ```python</div><div class="line">    if a &lt; 1:</div><div class="line">        print(a)</div></pre></td></tr></table></figure></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line"></div><div class="line">效果如下</div><div class="line"></div><div class="line">`if a &lt; b: a = 1 else a = 2`</div></pre></td></tr></table></figure>
+</code></pre><p>if a &lt; b :<br>    a = 1<br>else<br>    a = 2<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div><div class="line">40</div><div class="line">41</div><div class="line">42</div><div class="line">43</div><div class="line">44</div><div class="line">45</div></pre></td><td class="code"><pre><div class="line"></div><div class="line">### 1.9 分割线</div><div class="line"></div><div class="line"> 在一行中用三个以上的星号、减号、底线来建立一个分隔线，行内不能有其他东西。你也可以在星号或是减号中间插入空格。如</div><div class="line"></div><div class="line">    ***</div><div class="line">    ---</div><div class="line">    ___</div><div class="line">    * * *</div><div class="line">    效果如下：</div><div class="line"></div><div class="line">***</div><div class="line"></div><div class="line">---</div><div class="line"></div><div class="line">___</div><div class="line"></div><div class="line">* * * </div><div class="line"></div><div class="line">## 2. GitHub Flavored Markdown</div><div class="line"></div><div class="line">参考[github官方文档](https://help.github.com/categories/writing-on-github/)</div><div class="line"></div><div class="line">GFM使用了[Linguist](https://github.com/github/linguist)进行语言检测和语法高亮，能为几乎各种语言渲染出漂亮的样式。</div><div class="line"></div><div class="line">### 2.1 下划线</div><div class="line"></div><div class="line">单词中如果有_的话，GFM会忽略，而不会变成斜体！例如，单词wow_great_stuff中的great不会变成斜体。</div><div class="line"></div><div class="line"></div><div class="line">### 2.2 删除线</div><div class="line">    </div><div class="line">    文字放在一组~~之间即可，如</div><div class="line">    ~~删除线~~</div><div class="line">    效果如下</div><div class="line"></div><div class="line">~~删除线~~</div><div class="line"></div><div class="line">### 2.3 语法高亮</div><div class="line"></div><div class="line">可以在```之间敲入代码，并提示编程语言，例如python。</div><div class="line"></div><div class="line">    ```python</div><div class="line">    if a &lt; 1:</div><div class="line">        print(a)</div></pre></td></tr></table></figure></p>
 <pre><code>效果如下：
 </code></pre><figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">if</span> a &lt; <span class="number">1</span>:</div><div class="line">    print(a)</div></pre></td></tr></table></figure>
 <h3 id="2-4-task任务（未渲染成功-注意-中间有空格）"><a href="#2-4-task任务（未渲染成功-注意-中间有空格）" class="headerlink" title="2.4 task任务（未渲染成功 注意[]中间有空格）"></a>2.4 task任务（<del>未渲染成功</del> 注意[]中间有空格）</h3><p>将列表变成带勾选的任务列表(微测试成功)，嵌套列表</p>
@@ -614,9 +611,9 @@ else
 <li>[x] complete</li>
 </ul>
 <h3 id="2-5-添加表情（未成功-不要用中文冒号）"><a href="#2-5-添加表情（未成功-不要用中文冒号）" class="headerlink" title="2.5 添加表情（未成功 不要用中文冒号）"></a>2.5 添加表情（<del>未成功</del> 不要用中文冒号）</h3><p>GFM支持添加emoji表情,输入不同的符号码表示不同的表情</p>
-<pre><code>：blush：
-：joy：
-：grinning：
+<pre><code>:blush:
+:joy:
+:grinning:
 </code></pre><p>效果</p>
 <p>:blush:<br>:joy:<br>:grinning:</p>
 <h3 id="2-6-增强表格"><a href="#2-6-增强表格" class="headerlink" title="2.6 增强表格"></a>2.6 增强表格</h3><ul>
@@ -660,8 +657,8 @@ else
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2017/05/29/sublimetext总结-Python/" rel="next" title="sublimetext总结-Python">
-                <i class="fa fa-chevron-left"></i> sublimetext总结-Python
+              <a href="/2017/03/28/test/" rel="next" title="test">
+                <i class="fa fa-chevron-left"></i> test
               </a>
             
           </div>
@@ -670,8 +667,8 @@ else
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/2017/05/31/sublimetext-markdown实践/" rel="prev" title="sublimetext-markdown实践">
-                sublimetext-markdown实践 <i class="fa fa-chevron-right"></i>
+              <a href="/2017/05/29/sublimetext总结-Python/" rel="prev" title="sublimetext总结-Python">
+                sublimetext总结-Python <i class="fa fa-chevron-right"></i>
               </a>
             
           </div>
@@ -746,7 +743,7 @@ else
           
             <div class="site-state-item site-state-posts">
               <a href="/archives">
-                <span class="site-state-item-count">7</span>
+                <span class="site-state-item-count">8</span>
                 <span class="site-state-item-name">日志</span>
               </a>
             </div>
@@ -757,7 +754,7 @@ else
             
             <div class="site-state-item site-state-categories">
               <a href="/categories/index.html">
-                <span class="site-state-item-count">1</span>
+                <span class="site-state-item-count">2</span>
                 <span class="site-state-item-name">分类</span>
               </a>
             </div>
@@ -768,7 +765,7 @@ else
             
             <div class="site-state-item site-state-tags">
               <a href="/tags/index.html">
-                <span class="site-state-item-count">3</span>
+                <span class="site-state-item-count">5</span>
                 <span class="site-state-item-name">标签</span>
               </a>
             </div>

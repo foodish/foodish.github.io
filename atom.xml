@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://foodish.github.io/"/>
-  <updated>2017-05-31T14:40:01.000Z</updated>
+  <updated>2017-05-31T16:38:44.000Z</updated>
   <id>https://foodish.github.io/</id>
   
   <author>
@@ -14,6 +14,63 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Github-Hexo个人站点问题</title>
+    <link href="https://foodish.github.io/2017/06/01/Github-Hexo%E4%B8%AA%E4%BA%BA%E7%AB%99%E7%82%B9%E9%97%AE%E9%A2%98/"/>
+    <id>https://foodish.github.io/2017/06/01/Github-Hexo个人站点问题/</id>
+    <published>2017-05-31T16:38:44.000Z</published>
+    <updated>2017-05-31T16:38:44.000Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="Github-Hexo个人站点问题"><a href="#Github-Hexo个人站点问题" class="headerlink" title="Github-Hexo个人站点问题"></a>Github-Hexo个人站点问题</h2><!-- MarkdownTOC -->
+<ul>
+<li><a href="#0-缘起">0. 缘起</a></li>
+<li><a href="#1-博客写作与发布">1. 博客写作与发布</a><ul>
+<li><a href="#11-博客写作">1.1 博客写作</a></li>
+<li><a href="#12-博客发布">1.2 博客发布</a></li>
+</ul>
+</li>
+<li><a href="#2-遇到的各种坑">2. 遇到的各种坑</a><ul>
+<li><a href="#21-文章页面目录显示错误">2.1 文章页面目录显示错误</a></li>
+<li><a href="#22-gfm格式的markdown不支持">2.2 GFM格式的markdown不支持</a></li>
+<li><a href="#23-mathjax不支持">2.3 mathjax不支持</a></li>
+<li><a href="#24-代码块经常越界">2.4 代码块经常越界</a></li>
+<li><a href="#25-sublimetoc-生成的toc无法跳转">2.5 SublimeTOC 生成的TOC无法跳转</a></li>
+</ul>
+</li>
+</ul>
+<!-- /MarkdownTOC -->
+<h3 id="0-缘起"><a href="#0-缘起" class="headerlink" title="0. 缘起"></a>0. 缘起</h3><p>几个月前利用Github和Hexo搭建了一个个人站点，然后一直没怎么用。最近开始用Sublimetext，又想起来用，结果发现网站有好多问题。</p>
+<h3 id="1-博客写作与发布"><a href="#1-博客写作与发布" class="headerlink" title="1. 博客写作与发布"></a>1. 博客写作与发布</h3><h4 id="1-1-博客写作"><a href="#1-1-博客写作" class="headerlink" title="1.1 博客写作"></a>1.1 博客写作</h4><ol>
+<li>表头配置yaml信息如下</li>
+</ol>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line">---</div><div class="line">title: Github-Hexo个人站点问题</div><div class="line">date: 2017-06-01 00:38:44</div><div class="line">updated: 2017-06-01 00:38:44</div><div class="line">categories: 技术</div><div class="line">tags: [github, hexo]</div><div class="line">---</div></pre></td></tr></table></figure>
+<ul>
+<li>中间的空格不能少</li>
+<li>多个tags写作[tag1， tag2， tag3]</li>
+<li>date和updated可直接配置为YYYY-MM-DD，网站上将显示生成日期和更新日期，但此时本地文件不显示具体时间</li>
+</ul>
+<h4 id="1-2-博客发布"><a href="#1-2-博客发布" class="headerlink" title="1.2 博客发布"></a>1.2 博客发布</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">cd Github/hexo // 命令行进入hexo文件夹或直接在hexo文件夹git bash</div><div class="line">hexo clean // 清理缓存</div><div class="line">hexo s //本地查看</div><div class="line">hexo d -g // 生成并部署</div></pre></td></tr></table></figure>
+<h3 id="2-遇到的各种坑"><a href="#2-遇到的各种坑" class="headerlink" title="2. 遇到的各种坑"></a>2. 遇到的各种坑</h3><p>在Sublimetext书写然后浏览器预览基本没什么问题，挂到博客上就有一大堆的问题了。</p>
+<h4 id="2-1-文章页面目录显示错误"><a href="#2-1-文章页面目录显示错误" class="headerlink" title="2.1 文章页面目录显示错误"></a>2.1 文章页面目录显示错误</h4><h4 id="2-2-GFM格式的markdown不支持"><a href="#2-2-GFM格式的markdown不支持" class="headerlink" title="2.2 GFM格式的markdown不支持"></a>2.2 GFM格式的markdown不支持</h4><h4 id="2-3-mathjax不支持"><a href="#2-3-mathjax不支持" class="headerlink" title="2.3 mathjax不支持"></a>2.3 mathjax不支持</h4><h4 id="2-4-代码块经常越界"><a href="#2-4-代码块经常越界" class="headerlink" title="2.4 代码块经常越界"></a>2.4 代码块经常越界</h4><ul>
+<li>[ ] <a href="https://foodish.github.io/2017/05/29/markdown%E8%AF%AD%E6%B3%95/">markdown语法</a> 1.8 代码处</li>
+</ul>
+<h4 id="2-5-SublimeTOC-生成的TOC无法跳转"><a href="#2-5-SublimeTOC-生成的TOC无法跳转" class="headerlink" title="2.5 SublimeTOC 生成的TOC无法跳转"></a>2.5 SublimeTOC 生成的TOC无法跳转</h4>]]></content>
+    
+    <summary type="html">
+    
+      &lt;h2 id=&quot;Github-Hexo个人站点问题&quot;&gt;&lt;a href=&quot;#Github-Hexo个人站点问题&quot; class=&quot;headerlink&quot; title=&quot;Github-Hexo个人站点问题&quot;&gt;&lt;/a&gt;Github-Hexo个人站点问题&lt;/h2&gt;&lt;!-- Markdown
+    
+    </summary>
+    
+      <category term="技术" scheme="https://foodish.github.io/categories/%E6%8A%80%E6%9C%AF/"/>
+    
+    
+      <category term="github" scheme="https://foodish.github.io/tags/github/"/>
+    
+      <category term="hexo" scheme="https://foodish.github.io/tags/hexo/"/>
+    
+  </entry>
   
   <entry>
     <title>sublimetext-markdown编写数学公式</title>
@@ -241,170 +298,6 @@ $$x^{y^z}=(1+{\rm e}^x)^{-2xy^w}$$
   </entry>
   
   <entry>
-    <title>Markdown语法</title>
-    <link href="https://foodish.github.io/2017/05/29/markdown%E8%AF%AD%E6%B3%95/"/>
-    <id>https://foodish.github.io/2017/05/29/markdown语法/</id>
-    <published>2017-05-28T16:00:00.000Z</published>
-    <updated>2017-05-30T16:00:00.000Z</updated>
-    
-    <content type="html"><![CDATA[<h1 id="Markdown语法"><a href="#Markdown语法" class="headerlink" title="Markdown语法"></a>Markdown语法</h1><!-- MarkdownTOC -->
-<ul>
-<li><a href="#0-缘起">0. 缘起</a></li>
-<li><a href="#1-基本语法">1. 基本语法</a><ul>
-<li><a href="#10-反斜杠">1.0 反斜杠</a></li>
-<li><a href="#11-标题">1.1 标题</a></li>
-<li><a href="#12-加粗和斜体">1.2 加粗和斜体</a></li>
-<li><a href="#13-键盘按键">1.3 键盘按键</a></li>
-<li><a href="#14-列表">1.4 列表</a></li>
-<li><a href="#15-链接和图片">1.5 链接和图片</a></li>
-<li><a href="#16-数学公式">1.6 数学公式</a></li>
-<li><a href="#17-引用">1.7 引用</a></li>
-<li><a href="#18-代码">1.8 代码</a></li>
-<li><a href="#19-分割线">1.9 分割线</a></li>
-</ul>
-</li>
-<li><a href="#2-github-flavored-markdown">2. GitHub Flavored Markdown</a><ul>
-<li><a href="#21-下划线">2.1 下划线</a></li>
-<li><a href="#22-删除线">2.2 删除线</a></li>
-<li><a href="#23-语法高亮">2.3 语法高亮</a></li>
-<li><a href="#24-task任务（~~未渲染成功~~-注意中间有空格）">2.4 task任务（<del>未渲染成功</del> 注意[]中间有空格）</a></li>
-<li><a href="#25-添加表情（~~未成功~~-不要用中文冒号）">2.5 添加表情（<del>未成功</del> 不要用中文冒号）</a></li>
-<li><a href="#26-增强表格">2.6 增强表格</a></li>
-</ul>
-</li>
-</ul>
-<!-- /MarkdownTOC -->
-<h2 id="0-缘起"><a href="#0-缘起" class="headerlink" title="0. 缘起"></a>0. 缘起</h2><p>断断续续尝试过Markdown写作，不过最后都没能坚持下来。最近在折腾SublimeText3，顺便折腾了一遍相关Markdown插件，又激起了再次尝试Markdown的想法。再加上此前折腾的托管在github上的博客，也顺理成章应该选择Markdown书写。</p>
-<p>Markdown的特点：</p>
-<ul>
-<li><strong>专注写作内容</strong>：不再纠结字体、标题大小、行间距等等版式问题，专注于文章内容本身的编写。</li>
-<li><strong>代码语法高亮</strong></li>
-<li><strong>插入数学公式</strong>：Markdown可借助MathJax实现（还没学..）。</li>
-<li><strong>文件占用空间小</strong>：<code>.md</code>因为是纯文本文件，所以很小巧。</li>
-</ul>
-<p>由于是初学，现在感觉有些地方还不太方便。</p>
-<ul>
-<li>插入图片不方便，本地图片发布到网络前要上传图床</li>
-<li>LaTeX没学过，插入公式也感觉麻烦</li>
-<li>表格插入也不方便</li>
-</ul>
-<h2 id="1-基本语法"><a href="#1-基本语法" class="headerlink" title="1. 基本语法"></a>1. 基本语法</h2><h3 id="1-0-反斜杠"><a href="#1-0-反斜杠" class="headerlink" title="1.0 反斜杠"></a>1.0 反斜杠</h3><p><strong>Markdown 支持在符号前面加上反斜杠来帮助插入普通的符号</strong></p>
-<h3 id="1-1-标题"><a href="#1-1-标题" class="headerlink" title="1.1 标题"></a>1.1 标题</h3><pre><code>从#到######表示h1到h6，如
- # h1
-## h2
-### h3
-#后不加空格也一样，但加空格是最标准的写法
-</code></pre><h3 id="1-2-加粗和斜体"><a href="#1-2-加粗和斜体" class="headerlink" title="1.2 加粗和斜体"></a>1.2 加粗和斜体</h3><pre><code>- 两个*或_之间的文字会变为斜体
-- 两个**或__之间的文字会加粗
-- 两个`之间的文字会强调
-如
-*斜体*
-_斜体_
-**粗体**
-__粗体__
-`强调`
-</code></pre><p>显示效果如下：</p>
-<p><em>斜体</em><br><em>斜体</em></p>
-<p><strong>粗体</strong><br><strong>粗体</strong></p>
-<p><code>强调</code></p>
-<h3 id="1-3-键盘按键"><a href="#1-3-键盘按键" class="headerlink" title="1.3 键盘按键"></a>1.3 键盘按键</h3><pre><code>在&lt;kbd&gt;和&lt;/kbd&gt;之间的字母会像键盘按键那样显示，例如&lt;kbd&gt;Ctrl&lt;/kbd&gt;显示效果如下：
-</code></pre><p><kbd>Ctrl</kbd></p>
-<h3 id="1-4-列表"><a href="#1-4-列表" class="headerlink" title="1.4 列表"></a>1.4 列表</h3><pre><code>-、+、*都能表示列表
-有序列表则在文字前加序号1. 2. 3. 
-要注意的是文字前要有1个空格，列表前后都要有空行，如下
-
-* bullets can be `-`, `+`, or `*`
-* bullet list 1
-* bullet list 2   
-    * sub item 1
-    * sub item 2
-
-1. bullet 1
-2. bullet 2
-</code></pre><ul>
-<li>bullets can be <code>-</code>, <code>+</code>, or <code>*</code></li>
-<li>bullet list 1</li>
-<li>bullet list 2   <ul>
-<li>sub item 1</li>
-<li>sub item 2</li>
-</ul>
-</li>
-</ul>
-<ol>
-<li>bullet 1</li>
-<li>bullet 2</li>
-</ol>
-<h3 id="1-5-链接和图片"><a href="#1-5-链接和图片" class="headerlink" title="1.5 链接和图片"></a>1.5 链接和图片</h3><pre><code>图片、网址、章节引用的方法都类似，语法是：[显示文字](reference)。其中
-reference 可以是：图片链接、网址链接、#章节标题。图片时最前面加一个！
-目前还不知道有什么方法能嵌入本地图片。
-如
-[雪球](http://xueqiu.com)
-[1.3 键盘按键](### 1.3 键盘按键)
-![图片名](图片链接地址)
-</code></pre><p><a href="http://xueqiu.com" target="_blank" rel="external">雪球</a><br><a href="### 1.3 键盘按键">1.3 键盘按键</a></p>
-<h3 id="1-6-数学公式"><a href="#1-6-数学公式" class="headerlink" title="1.6 数学公式"></a>1.6 数学公式</h3><p>latex公式</p>
-<h3 id="1-7-引用"><a href="#1-7-引用" class="headerlink" title="1.7 引用"></a>1.7 引用</h3><pre><code>在引用的文字前加&gt; 即可，如
-&gt; 这里是引用文字
-效果如下 
-</code></pre><blockquote>
-<p>这里是引用文字</p>
-</blockquote>
-<h3 id="1-8-代码"><a href="#1-8-代码" class="headerlink" title="1.8 代码"></a>1.8 代码</h3><pre><code>插入代码块只需要单地缩进 4 个空格或是 1 个制表符即可，即按下tab即可
-
-需要引用代码时，如果引用的语句只有一段，不分行，可以用 ` 将语句包起来。
-如果引用的语句为多行，可以将<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">如</div><div class="line"></div><div class="line">`if a &lt; b: a = 1 else a = 2`</div></pre></td></tr></table></figure>
-
-if a &lt; b :
-    a = 1
-else
-    a = 2
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">    效果如下</div><div class="line"></div><div class="line">`if a &lt; b: a = 1 else a = 2`</div></pre></td></tr></table></figure>
-</code></pre><p>if a &lt; b :<br>    a = 1<br>else<br>    a = 2<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div><div class="line">40</div><div class="line">41</div><div class="line">42</div><div class="line">43</div><div class="line">44</div></pre></td><td class="code"><pre><div class="line"></div><div class="line">### 1.9 分割线</div><div class="line"></div><div class="line">    在一行中用三个以上的星号、减号、底线来建立一个分隔线，行内不能有其他东西。你也可以在星号或是减号中间插入空格。如</div><div class="line">    ***</div><div class="line">    ---</div><div class="line">    ___</div><div class="line">    * * *</div><div class="line">    效果如下：</div><div class="line"></div><div class="line">***</div><div class="line"></div><div class="line">---</div><div class="line"></div><div class="line">___</div><div class="line"></div><div class="line">* * * </div><div class="line"></div><div class="line">## 2. GitHub Flavored Markdown</div><div class="line"></div><div class="line">参考[github官方文档](https://help.github.com/categories/writing-on-github/)</div><div class="line"></div><div class="line">GFM使用了[Linguist](https://github.com/github/linguist)进行语言检测和语法高亮，能为几乎各种语言渲染出漂亮的样式。</div><div class="line"></div><div class="line">### 2.1 下划线</div><div class="line"></div><div class="line">单词中如果有_的话，GFM会忽略，而不会变成斜体！例如，单词wow_great_stuff中的great不会变成斜体。</div><div class="line"></div><div class="line"></div><div class="line">### 2.2 删除线</div><div class="line">    </div><div class="line">    文字放在一组~~之间即可，如</div><div class="line">    ~~删除线~~</div><div class="line">    效果如下</div><div class="line"></div><div class="line">~~删除线~~</div><div class="line"></div><div class="line">### 2.3 语法高亮</div><div class="line"></div><div class="line">    可以在```之间敲入代码，并提示编程语言，例如python。</div><div class="line"></div><div class="line">    ```python</div><div class="line">    if a &lt; 1:</div><div class="line">        print(a)</div></pre></td></tr></table></figure></p>
-<pre><code>效果如下：
-</code></pre><figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">if</span> a &lt; <span class="number">1</span>:</div><div class="line">    print(a)</div></pre></td></tr></table></figure>
-<h3 id="2-4-task任务（未渲染成功-注意-中间有空格）"><a href="#2-4-task任务（未渲染成功-注意-中间有空格）" class="headerlink" title="2.4 task任务（未渲染成功 注意[]中间有空格）"></a>2.4 task任务（<del>未渲染成功</del> 注意[]中间有空格）</h3><p>将列表变成带勾选的任务列表(微测试成功)，嵌套列表</p>
-<pre><code>- [ ] task list
-- [ ] list systax required
-- [ ] normal ** formatting**, @mentions, #1234 refs
-- [ ] incomplete
-- [x] complete
-</code></pre><p>效果如下</p>
-<ul>
-<li>[ ] task list</li>
-<li>[ ] list systax required</li>
-<li>[ ] normal <strong>formatting</strong>,@mentions,#1234 refs</li>
-<li>[ ] incomplete</li>
-<li>[x] complete</li>
-</ul>
-<h3 id="2-5-添加表情（未成功-不要用中文冒号）"><a href="#2-5-添加表情（未成功-不要用中文冒号）" class="headerlink" title="2.5 添加表情（未成功 不要用中文冒号）"></a>2.5 添加表情（<del>未成功</del> 不要用中文冒号）</h3><p>GFM支持添加emoji表情,输入不同的符号码表示不同的表情</p>
-<pre><code>：blush：
-：joy：
-：grinning：
-</code></pre><p>效果</p>
-<p>:blush:<br>:joy:<br>:grinning:</p>
-<h3 id="2-6-增强表格"><a href="#2-6-增强表格" class="headerlink" title="2.6 增强表格"></a>2.6 增强表格</h3><ul>
-<li>竖线可以不对齐</li>
-<li>可以定义表格中文字对齐方式</li>
-<li>表格可以嵌入图片</li>
-</ul>
-]]></content>
-    
-    <summary type="html">
-    
-      &lt;h1 id=&quot;Markdown语法&quot;&gt;&lt;a href=&quot;#Markdown语法&quot; class=&quot;headerlink&quot; title=&quot;Markdown语法&quot;&gt;&lt;/a&gt;Markdown语法&lt;/h1&gt;&lt;!-- MarkdownTOC --&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&quot;#0
-    
-    </summary>
-    
-      <category term="学习" scheme="https://foodish.github.io/categories/%E5%AD%A6%E4%B9%A0/"/>
-    
-    
-      <category term="markdown" scheme="https://foodish.github.io/tags/markdown/"/>
-    
-  </entry>
-  
-  <entry>
     <title>sublimetext总结-Python</title>
     <link href="https://foodish.github.io/2017/05/29/sublimetext%E6%80%BB%E7%BB%93-Python/"/>
     <id>https://foodish.github.io/2017/05/29/sublimetext总结-Python/</id>
@@ -625,6 +518,167 @@ else
       <category term="sublimetext" scheme="https://foodish.github.io/tags/sublimetext/"/>
     
       <category term="python" scheme="https://foodish.github.io/tags/python/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Markdown语法</title>
+    <link href="https://foodish.github.io/2017/05/29/markdown%E8%AF%AD%E6%B3%95/"/>
+    <id>https://foodish.github.io/2017/05/29/markdown语法/</id>
+    <published>2017-05-28T16:00:00.000Z</published>
+    <updated>2017-05-30T16:00:00.000Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="Markdown语法"><a href="#Markdown语法" class="headerlink" title="Markdown语法"></a>Markdown语法</h1><!-- MarkdownTOC -->
+<ul>
+<li><a href="#0-缘起">0. 缘起</a></li>
+<li><a href="#1-基本语法">1. 基本语法</a><ul>
+<li><a href="#10-反斜杠">1.0 反斜杠</a></li>
+<li><a href="#11-标题">1.1 标题</a></li>
+<li><a href="#12-加粗和斜体">1.2 加粗和斜体</a></li>
+<li><a href="#13-键盘按键">1.3 键盘按键</a></li>
+<li><a href="#14-列表">1.4 列表</a></li>
+<li><a href="#15-链接和图片">1.5 链接和图片</a></li>
+<li><a href="#16-数学公式">1.6 数学公式</a></li>
+<li><a href="#17-引用">1.7 引用</a></li>
+<li><a href="#18-代码">1.8 代码</a></li>
+<li><a href="#19-分割线">1.9 分割线</a></li>
+</ul>
+</li>
+<li><a href="#2-github-flavored-markdown">2. GitHub Flavored Markdown</a><ul>
+<li><a href="#21-下划线">2.1 下划线</a></li>
+<li><a href="#22-删除线">2.2 删除线</a></li>
+<li><a href="#23-语法高亮">2.3 语法高亮</a></li>
+<li><a href="#24-task任务（~~未渲染成功~~-注意中间有空格）">2.4 task任务（<del>未渲染成功</del> 注意[]中间有空格）</a></li>
+<li><a href="#25-添加表情（~~未成功~~-不要用中文冒号）">2.5 添加表情（<del>未成功</del> 不要用中文冒号）</a></li>
+<li><a href="#26-增强表格">2.6 增强表格</a></li>
+</ul>
+</li>
+</ul>
+<!-- /MarkdownTOC -->
+<h2 id="0-缘起"><a href="#0-缘起" class="headerlink" title="0. 缘起"></a>0. 缘起</h2><p>断断续续尝试过Markdown写作，不过最后都没能坚持下来。最近在折腾SublimeText3，顺便折腾了一遍相关Markdown插件，又激起了再次尝试Markdown的想法。再加上此前折腾的托管在github上的博客，也顺理成章应该选择Markdown书写。</p>
+<p>Markdown的特点：</p>
+<ul>
+<li><strong>专注写作内容</strong>：不再纠结字体、标题大小、行间距等等版式问题，专注于文章内容本身的编写。</li>
+<li><strong>代码语法高亮</strong></li>
+<li><strong>插入数学公式</strong>：Markdown可借助MathJax实现（还没学..）。</li>
+<li><strong>文件占用空间小</strong>：<code>.md</code>因为是纯文本文件，所以很小巧。</li>
+</ul>
+<p>由于是初学，现在感觉有些地方还不太方便。</p>
+<ul>
+<li>插入图片不方便，本地图片发布到网络前要上传图床</li>
+<li>LaTeX没学过，插入公式也感觉麻烦</li>
+<li>表格插入也不方便</li>
+</ul>
+<h2 id="1-基本语法"><a href="#1-基本语法" class="headerlink" title="1. 基本语法"></a>1. 基本语法</h2><h3 id="1-0-反斜杠"><a href="#1-0-反斜杠" class="headerlink" title="1.0 反斜杠"></a>1.0 反斜杠</h3><p><strong>Markdown 支持在符号前面加上反斜杠来帮助插入普通的符号</strong></p>
+<h3 id="1-1-标题"><a href="#1-1-标题" class="headerlink" title="1.1 标题"></a>1.1 标题</h3><pre><code>从#到######表示h1到h6，如
+ # h1
+## h2
+### h3
+#后不加空格也一样，但加空格是最标准的写法
+</code></pre><h3 id="1-2-加粗和斜体"><a href="#1-2-加粗和斜体" class="headerlink" title="1.2 加粗和斜体"></a>1.2 加粗和斜体</h3><pre><code>- 两个*或_之间的文字会变为斜体
+- 两个**或__之间的文字会加粗
+- 两个`之间的文字会强调
+如
+*斜体*
+_斜体_
+**粗体**
+__粗体__
+`强调`
+</code></pre><p>显示效果如下：</p>
+<p><em>斜体</em><br><em>斜体</em></p>
+<p><strong>粗体</strong><br><strong>粗体</strong></p>
+<p><code>强调</code></p>
+<h3 id="1-3-键盘按键"><a href="#1-3-键盘按键" class="headerlink" title="1.3 键盘按键"></a>1.3 键盘按键</h3><pre><code>在&lt;kbd&gt;和&lt;/kbd&gt;之间的字母会像键盘按键那样显示，例如&lt;kbd&gt;Ctrl&lt;/kbd&gt;显示效果如下：
+</code></pre><p><kbd>Ctrl</kbd></p>
+<h3 id="1-4-列表"><a href="#1-4-列表" class="headerlink" title="1.4 列表"></a>1.4 列表</h3><pre><code>-、+、*都能表示列表
+有序列表则在文字前加序号1. 2. 3. 
+要注意的是文字前要有1个空格，列表前后都要有空行，如下
+
+* bullets can be `-`, `+`, or `*`
+* bullet list 1
+* bullet list 2   
+    * sub item 1
+    * sub item 2
+
+1. bullet 1
+2. bullet 2
+</code></pre><ul>
+<li>bullets can be <code>-</code>, <code>+</code>, or <code>*</code></li>
+<li>bullet list 1</li>
+<li>bullet list 2   <ul>
+<li>sub item 1</li>
+<li>sub item 2</li>
+</ul>
+</li>
+</ul>
+<ol>
+<li>bullet 1</li>
+<li>bullet 2</li>
+</ol>
+<h3 id="1-5-链接和图片"><a href="#1-5-链接和图片" class="headerlink" title="1.5 链接和图片"></a>1.5 链接和图片</h3><pre><code>图片、网址、章节引用的方法都类似，语法是：[显示文字](reference)。其中
+reference 可以是：图片链接、网址链接、#章节标题。图片时最前面加一个！
+目前还不知道有什么方法能嵌入本地图片。
+如
+[雪球](http://xueqiu.com)
+[1.3 键盘按键](### 1.3 键盘按键)
+![图片名](图片链接地址)
+</code></pre><p><a href="http://xueqiu.com" target="_blank" rel="external">雪球</a><br><a href="### 1.3 键盘按键">1.3 键盘按键</a></p>
+<h3 id="1-6-数学公式"><a href="#1-6-数学公式" class="headerlink" title="1.6 数学公式"></a>1.6 数学公式</h3><p>latex公式</p>
+<h3 id="1-7-引用"><a href="#1-7-引用" class="headerlink" title="1.7 引用"></a>1.7 引用</h3><pre><code>在引用的文字前加&gt; 即可，如
+&gt; 这里是引用文字
+效果如下 
+</code></pre><blockquote>
+<p>这里是引用文字</p>
+</blockquote>
+<h3 id="1-8-代码"><a href="#1-8-代码" class="headerlink" title="1.8 代码"></a>1.8 代码</h3><p>插入代码块只需要单地缩进 4 个空格或是 1 个制表符即可，即按下tab即可</p>
+<p>需要引用代码时，如果引用的语句只有一段，不分行，可以用 ` 将语句包起来。<br>如果引用的语句为多行，可以将<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">如</div><div class="line"></div><div class="line">    `if a &lt; b: a = 1 else a = 2`</div><div class="line"></div><div class="line">多行代码如下</div></pre></td></tr></table></figure></p>
+<pre><code>if a &lt; b :
+    a = 1
+else
+    a = 2
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line"></div><div class="line">效果如下</div><div class="line"></div><div class="line">`if a &lt; b: a = 1 else a = 2`</div></pre></td></tr></table></figure>
+</code></pre><p>if a &lt; b :<br>    a = 1<br>else<br>    a = 2<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div><div class="line">40</div><div class="line">41</div><div class="line">42</div><div class="line">43</div><div class="line">44</div><div class="line">45</div></pre></td><td class="code"><pre><div class="line"></div><div class="line">### 1.9 分割线</div><div class="line"></div><div class="line"> 在一行中用三个以上的星号、减号、底线来建立一个分隔线，行内不能有其他东西。你也可以在星号或是减号中间插入空格。如</div><div class="line"></div><div class="line">    ***</div><div class="line">    ---</div><div class="line">    ___</div><div class="line">    * * *</div><div class="line">    效果如下：</div><div class="line"></div><div class="line">***</div><div class="line"></div><div class="line">---</div><div class="line"></div><div class="line">___</div><div class="line"></div><div class="line">* * * </div><div class="line"></div><div class="line">## 2. GitHub Flavored Markdown</div><div class="line"></div><div class="line">参考[github官方文档](https://help.github.com/categories/writing-on-github/)</div><div class="line"></div><div class="line">GFM使用了[Linguist](https://github.com/github/linguist)进行语言检测和语法高亮，能为几乎各种语言渲染出漂亮的样式。</div><div class="line"></div><div class="line">### 2.1 下划线</div><div class="line"></div><div class="line">单词中如果有_的话，GFM会忽略，而不会变成斜体！例如，单词wow_great_stuff中的great不会变成斜体。</div><div class="line"></div><div class="line"></div><div class="line">### 2.2 删除线</div><div class="line">    </div><div class="line">    文字放在一组~~之间即可，如</div><div class="line">    ~~删除线~~</div><div class="line">    效果如下</div><div class="line"></div><div class="line">~~删除线~~</div><div class="line"></div><div class="line">### 2.3 语法高亮</div><div class="line"></div><div class="line">可以在```之间敲入代码，并提示编程语言，例如python。</div><div class="line"></div><div class="line">    ```python</div><div class="line">    if a &lt; 1:</div><div class="line">        print(a)</div></pre></td></tr></table></figure></p>
+<pre><code>效果如下：
+</code></pre><figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">if</span> a &lt; <span class="number">1</span>:</div><div class="line">    print(a)</div></pre></td></tr></table></figure>
+<h3 id="2-4-task任务（未渲染成功-注意-中间有空格）"><a href="#2-4-task任务（未渲染成功-注意-中间有空格）" class="headerlink" title="2.4 task任务（未渲染成功 注意[]中间有空格）"></a>2.4 task任务（<del>未渲染成功</del> 注意[]中间有空格）</h3><p>将列表变成带勾选的任务列表(微测试成功)，嵌套列表</p>
+<pre><code>- [ ] task list
+- [ ] list systax required
+- [ ] normal ** formatting**, @mentions, #1234 refs
+- [ ] incomplete
+- [x] complete
+</code></pre><p>效果如下</p>
+<ul>
+<li>[ ] task list</li>
+<li>[ ] list systax required</li>
+<li>[ ] normal <strong>formatting</strong>,@mentions,#1234 refs</li>
+<li>[ ] incomplete</li>
+<li>[x] complete</li>
+</ul>
+<h3 id="2-5-添加表情（未成功-不要用中文冒号）"><a href="#2-5-添加表情（未成功-不要用中文冒号）" class="headerlink" title="2.5 添加表情（未成功 不要用中文冒号）"></a>2.5 添加表情（<del>未成功</del> 不要用中文冒号）</h3><p>GFM支持添加emoji表情,输入不同的符号码表示不同的表情</p>
+<pre><code>:blush:
+:joy:
+:grinning:
+</code></pre><p>效果</p>
+<p>:blush:<br>:joy:<br>:grinning:</p>
+<h3 id="2-6-增强表格"><a href="#2-6-增强表格" class="headerlink" title="2.6 增强表格"></a>2.6 增强表格</h3><ul>
+<li>竖线可以不对齐</li>
+<li>可以定义表格中文字对齐方式</li>
+<li>表格可以嵌入图片</li>
+</ul>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;h1 id=&quot;Markdown语法&quot;&gt;&lt;a href=&quot;#Markdown语法&quot; class=&quot;headerlink&quot; title=&quot;Markdown语法&quot;&gt;&lt;/a&gt;Markdown语法&lt;/h1&gt;&lt;!-- MarkdownTOC --&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;#0
+    
+    </summary>
+    
+      <category term="学习" scheme="https://foodish.github.io/categories/%E5%AD%A6%E4%B9%A0/"/>
+    
+    
+      <category term="markdown" scheme="https://foodish.github.io/tags/markdown/"/>
     
   </entry>
   
