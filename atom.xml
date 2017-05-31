@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://foodish.github.io/"/>
-  <updated>2017-03-28T11:20:27.916Z</updated>
+  <updated>2017-05-31T14:40:01.000Z</updated>
   <id>https://foodish.github.io/</id>
   
   <author>
@@ -14,6 +14,615 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>sublimetext-markdown编写数学公式</title>
+    <link href="https://foodish.github.io/2017/05/31/sublimetext-markdown%E7%BC%96%E5%86%99%E6%95%B0%E5%AD%A6%E5%85%AC%E5%BC%8F/"/>
+    <id>https://foodish.github.io/2017/05/31/sublimetext-markdown编写数学公式/</id>
+    <published>2017-05-31T14:40:01.000Z</published>
+    <updated>2017-05-31T14:40:01.000Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="sublimetext-markdown编写数学公式"><a href="#sublimetext-markdown编写数学公式" class="headerlink" title="sublimetext-markdown编写数学公式"></a>sublimetext-markdown编写数学公式</h2><!-- MarkdownTOC -->
+<ul>
+<li><a href="#1-如何插入公式">1. 如何插入公式</a><ul>
+<li><a href="#11-行内公式">1.1 行内公式</a></li>
+<li><a href="#12-行间公式">1.2 行间公式</a></li>
+</ul>
+</li>
+<li><a href="#2-输入各种符号">2. 输入各种符号</a><ul>
+<li><a href="#21-上下标">2.1 上下标</a></li>
+<li><a href="#22-括号和分隔符">2.2 括号和分隔符</a></li>
+<li><a href="#23-输入分数">2.3 输入分数</a></li>
+<li><a href="#24-输入开方">2.4 输入开方</a></li>
+<li><a href="#25-输入省略号">2.5 输入省略号</a></li>
+<li><a href="#26-输入矢量">2.6 输入矢量</a></li>
+<li><a href="#27-输入积分">2.7 输入积分</a></li>
+<li><a href="#28-输入极限运算">2.8 输入极限运算</a></li>
+<li><a href="#29-输入累加、累乘运算">2.9 输入累加、累乘运算</a></li>
+<li><a href="#210-公式应用（引用？）">2.10 公式应用（引用？）</a></li>
+<li><a href="#211-输入希腊字母">2.11 输入希腊字母</a></li>
+<li><a href="#212-其它特殊字符">2.12 其它特殊字符</a></li>
+<li><a href="#213-进行字体转换">2.13 进行字体转换</a></li>
+</ul>
+</li>
+</ul>
+<!-- /MarkdownTOC -->
+<p>安装一系列Markdown插件并开启Mathjax后，就可以在sublimetext中用latex语法编写数学公式了。这里把基本语法整理一下。</p>
+<h3 id="1-如何插入公式"><a href="#1-如何插入公式" class="headerlink" title="1. 如何插入公式"></a>1. 如何插入公式</h3><p>LaTeX的数学公式有两张：行内公式和行间公式。行内公式与其他文字混编在一起，行间公式则单独成行。</p>
+<h4 id="1-1-行内公式"><a href="#1-1-行内公式" class="headerlink" title="1.1 行内公式"></a>1.1 行内公式</h4><p>行内公式有三种表示方法：</p>
+<pre><code>\\(数学公式\\) 或 $数学公式$ 或 $(数学公式$)
+
+这是一个行内公式\\(x=\frac{-b\pm\sqrt{b^2-4ac}}{2a}\\)
+这是一个行内公式$x=\frac{-b\pm\sqrt{b^2-4ac}}{2a}$
+这是一个行内公式$(x=\frac{-b\pm\sqrt{b^2-4ac}}{2a}$)
+</code></pre><p>显示为<br>这是一个行内公式\(x=\frac{-b\pm\sqrt{b^2-4ac}}{2a}\)</p>
+<p>这是一个行内公式$x=\frac{-b\pm\sqrt{b^2-4ac}}{2a}$</p>
+<p>这是一个行内公式$(x=\frac{-b\pm\sqrt{b^2-4ac}}{2a}$)</p>
+<h4 id="1-2-行间公式"><a href="#1-2-行间公式" class="headerlink" title="1.2 行间公式"></a>1.2 行间公式</h4><p>行间公式可以表示为：</p>
+<pre><code>\\[数学公式\\] 或 $$数学公式$$
+$$x=\frac{-b\pm\sqrt{b^2-4ac}}{2a}$$
+\\[x=\frac{-b\pm\sqrt{b^2-4ac}}{2a}\\]
+</code></pre><p>显示为<br>$$x=\frac{-b\pm\sqrt{b^2-4ac}}{2a}$$<br>\[x=\frac{-b\pm\sqrt{b^2-4ac}}{2a}\]</p>
+<h3 id="2-输入各种符号"><a href="#2-输入各种符号" class="headerlink" title="2. 输入各种符号"></a>2. 输入各种符号</h3><h4 id="2-1-上下标"><a href="#2-1-上下标" class="headerlink" title="2.1 上下标"></a>2.1 上下标</h4><p>^表示上标，_ 表示下标。<br>如果上下标的内容多于一个字符，用{}将其括起来作为一个整体。<br>上下标可以嵌套，也可以同时使用</p>
+<pre><code>例如：$x^{y^z}=(1+{\rm e}^x)^{-2xy^w}$
+</code></pre><p>显示为<br>例如：$x^{y^z}=(1+{\rm e}^x)^{-2xy^w}$</p>
+<p>如果要在左右两边都有上下标，可以用\sideset命令(不成功)</p>
+<pre><code>例子：$\sideset{^1_2}{^3_4}\bigotimes$
+</code></pre><p>显示 :$\sideset{^1_2}{^3_4}\bigotimes$</p>
+<h4 id="2-2-括号和分隔符"><a href="#2-2-括号和分隔符" class="headerlink" title="2.2 括号和分隔符"></a>2.2 括号和分隔符</h4><p>()、[]、|表示自己，{}表示{}。<br>当要显示大号的括号或分隔符时，要使用\left和\rigth命令</p>
+<pre><code>例子：$f(x,y,z)=3y^2z \left(3+\frac{7x+5}{1=y^2} \right)$
+</code></pre><p>显示为$f(x,y,z)=3y^2z \left(3+\frac{7x+5}{1+y^2} \right)$</p>
+<p>有时候要用\left.或\right.进行匹配而不显示本身。</p>
+<pre><code>例子：$\left. \frac{{\rm d}u}{{\rm d}x} \right| _{x=0}$
+
+显示：$\left. \frac{{\rm d}u}{{\rm d}x} \right| _{x=0}$
+
+#### 2.3 输入分数
+
+    例子：$\frac{1}{3}$　或　$1 \over 3$
+
+显示：$\frac{1}{3}$　或　$1 \over 3$
+
+#### 2.4 输入开方
+
+    例子：$\sqrt{2}$　和　$\sqrt[n]{3}$
+
+显示：$\sqrt{2}$　和　$\sqrt[n]{3}$
+
+#### 2.5 输入省略号
+
+数学公式中常见的省略号有两种，\ldots表示与文本底线对齐的省略号，\cdots表示与文本中线对齐的省略号。\cdot表示一个中间的点
+
+    例子：$f(x_1,x_2,\ldots,x_n) = x_1^2 + x_2^2 + \cdots + x_n^2$
+
+显示：$f(x_1,x_2,\ldots,x_n) = x_1^2 + x_2^2 + \cdots + x_n^2$
+
+#### 2.6 输入矢量
+
+    例子：$\vec{a} \cdot \vec{b}=0$
+
+显示：$\vec{a} \cdot \vec{b}=0$
+
+#### 2.7 输入积分
+
+例子：$\int_0^1 x^2 {\rm d}x$
+
+显示：$\int_0^1 x^2 {\rm d}x$
+
+#### 2.8 输入极限运算
+
+例子：$\lim_{n \rightarrow +\infty} \frac{1}{n(n+1)}$
+
+显示：$\lim_{n \rightarrow +\infty} \frac{1}{n(n+1)}$
+
+#### 2.9 输入累加、累乘运算
+
+    例子：$\sum_{i=0}^n \frac{1}{i^2}$　和　$\prod_{i=0}^n \frac{1}{i^2}$
+
+显示：$\sum_{i=0}^n \frac{1}{i^2}$　和　$\prod_{i=0}^n \frac{1}{i^2}$
+
+#### 2.10 公式应用（引用？）
+
+先要在［mathjax］后添加：
+
+＜script type="text/x-mathjax-config"＞
+    MathJax.Hub.Config({
+        TeX: {equationNumbers: {
+            autoNumber: ["AMS"], useLabelIds: true}},
+        &quot;HTML-CSS&quot;: {linebreaks: {automatic: true}},
+        SVG: {linebreaks: {automatic: true}}
+});
+</code></pre><p>＜/script＞</p>
+<pre><code>例子：$r = r_F+ \beta(r_M – r_F) + \epsilon$
+</code></pre><p>显示：$r = r_F+ \beta(r_M – r_F) + \epsilon$</p>
+<h4 id="2-11-输入希腊字母"><a href="#2-11-输入希腊字母" class="headerlink" title="2.11 输入希腊字母"></a>2.11 输入希腊字母</h4><p>例子：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">$\alpha$　$\beta$　$\gamma$　$\Gamma$　$\delta$　$\Delta$　</div><div class="line">$\epsilon$　$\varepsilon$　$\zeta$　$\eta$　$\theta$　$\Theta$　</div><div class="line">$\vartheta$ $\iota$　$\kappa$　$\lambda$　$\Lambda$　$\mu$ $\nu$ </div><div class="line">$\xi$　$\Xi$　$\pi$　$\Pi$　$\varpi$　$\rho$ $\varrho$　</div><div class="line">$\sigma$　$\Sigma$　$\varsigma$　$\tau$　$\upsilon$　$\Upsilon$ </div><div class="line">$\phi$　$\Phi$　$\varphi$　$\chi$ $\psi$　$\Psi$　$\omega$　$\Omega$</div></pre></td></tr></table></figure></p>
+<p>显示</p>
+<p>$\alpha$　$\beta$　$\gamma$　$\Gamma$　$\delta$　$\Delta$　<br>$\epsilon$　$\varepsilon$　$\zeta$　$\eta$　$\theta$　$\Theta$　<br>$\vartheta$ $\iota$　$\kappa$　$\lambda$　$\Lambda$　$\mu$ $\nu$<br>$\xi$　$\Xi$　$\pi$　$\Pi$　$\varpi$　$\rho$ $\varrho$　<br>$\sigma$　$\Sigma$　$\varsigma$　$\tau$　$\upsilon$　$\Upsilon$<br>$\phi$　$\Phi$　$\varphi$　$\chi$ $\psi$　$\Psi$　$\omega$　$\Omega$</p>
+<h4 id="2-12-其它特殊字符"><a href="#2-12-其它特殊字符" class="headerlink" title="2.12 其它特殊字符"></a>2.12 其它特殊字符</h4><p>关系运算符：<br>±：\pm<br>×：\times<br>÷：\div<br>∣：\mid<br>?：\nmid<br>?：\cdot<br>°：\circ<br>?：\ast<br>?：\bigodot<br>?：\bigotimes<br>?：\bigoplus<br>≤：\leq<br>≥：\geq<br>≠：\neq<br>≈：\approx<br>≡：\equiv<br>∑：\sum<br>∏：\prod<br>?：\coprod</p>
+<p>集合运算符：<br>?：\emptyset<br>∈：\in<br>?：\notin<br>?：\subset<br>?：\supset<br>?：\subseteq<br>?：\supseteq<br>?：\bigcap<br>?：\bigcup<br>?：\bigvee<br>?：\bigwedge<br>?：\biguplus<br>?：\bigsqcup</p>
+<p>对数运算符：<br>log：\log<br>lg：\lg<br>ln：\ln</p>
+<p>三角运算符：<br>⊥：\bot<br>∠：\angle<br>30°：30^\circ<br>sin：\sin<br>cos：\cos<br>tan：\tan<br>cot：\cot<br>sec：\sec<br>csc：\csc</p>
+<p>微积分运算符：<br>′：\prime<br>∫：\int<br>?：\iint<br>?：\iiint<br>??：\iiiint<br>∮：\oint<br>lim：\lim<br>∞：\infty<br>?：\nabla</p>
+<p>逻辑运算符：<br>∵：\because<br>∴：\therefore<br>?：\forall<br>?：\exists<br>≠：\not=<br>≯：\not&gt;<br>??：\not\subset</p>
+<p>戴帽符号：<br>y^：\hat{y}<br>yˇ：\check{y}<br>y?：\breve{y}</p>
+<p>连线符号：<br>a+b+c+dˉˉˉˉˉˉˉˉˉˉˉˉˉˉˉˉˉˉ：\overline{a+b+c+d}<br>a+b+c+d??????????：\underline{a+b+c+d}<br>a+b+c 1.0+d 2.0：\overbrace{a+\underbrace{b+c}_{1.0}+d}^{2.0}</p>
+<p>箭头符号：<br>↑：\uparrow<br>↓：\downarrow<br>?：\Uparrow<br>?：\Downarrow<br>→：\rightarrow<br>←：\leftarrow<br>?：\Rightarrow<br>?：\Leftarrow<br>?：\longrightarrow<br>?：\longleftarrow<br>?：\Longrightarrow<br>?：\Longleftarrow</p>
+<p>要输出字符　空格　#　$　%　&amp;　<em>　{　}　，用命令：　\空格　#　\$　\%　\&amp;　\</em>　{　}</p>
+<h4 id="2-13-进行字体转换"><a href="#2-13-进行字体转换" class="headerlink" title="2.13 进行字体转换"></a>2.13 进行字体转换</h4><p>要对公式的某一部分字符进行字体转换，可以用{\rm 需转换的部分字符}命令，其中\rm可以参照下表选择合适的字体。一般情况下，公式默认为意大利体。<br>\rm　　罗马体　　　　　　　\it　　意大利体<br>\bf　　黑体　　　　　　　　\cal 　花体<br>\sl　　倾斜体　　　　　　　\sf　　等线体<br>\mit 　数学斜体　　　　　　\tt　　打字机字体<br>\sc　　小体大写字母</p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;h2 id=&quot;sublimetext-markdown编写数学公式&quot;&gt;&lt;a href=&quot;#sublimetext-markdown编写数学公式&quot; class=&quot;headerlink&quot; title=&quot;sublimetext-markdown编写数学公式&quot;&gt;&lt;/a&gt;sublimet
+    
+    </summary>
+    
+      <category term="学习" scheme="https://foodish.github.io/categories/%E5%AD%A6%E4%B9%A0/"/>
+    
+    
+      <category term="markdown" scheme="https://foodish.github.io/tags/markdown/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>sublimetext-markkdown实践</title>
+    <link href="https://foodish.github.io/2017/05/31/sublimetext-markdown%E5%AE%9E%E8%B7%B5/"/>
+    <id>https://foodish.github.io/2017/05/31/sublimetext-markdown实践/</id>
+    <published>2017-05-31T12:42:27.000Z</published>
+    <updated>2017-05-31T12:42:27.000Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="sublimetext-markkdown实践"><a href="#sublimetext-markkdown实践" class="headerlink" title="sublimetext-markkdown实践"></a>sublimetext-markkdown实践</h2><!-- MarkdownTOC -->
+<ul>
+<li><a href="#1-所需插件">1. 所需插件</a></li>
+<li><a href="#2-具体实践">2. 具体实践</a><ul>
+<li><a href="#21-markdownediting">2.1 MarkdownEditing</a></li>
+<li><a href="#22-markdown-preview">2.2 Markdown Preview</a></li>
+<li><a href="#23-table-editor">2.3 Table Editor</a></li>
+<li><a href="#24-markdowntoc">2.4 MarkdownTOC</a></li>
+</ul>
+</li>
+</ul>
+<!-- /MarkdownTOC -->
+<h3 id="1-所需插件"><a href="#1-所需插件" class="headerlink" title="1. 所需插件"></a>1. 所需插件</h3><p>SublimeText自带有markdown格式，但第三方插件提供了更多的选择，如支持GFM等。这里用到的的插件主要有MarkdownEditing、Markdown Preview、Table Editor</p>
+<h3 id="2-具体实践"><a href="#2-具体实践" class="headerlink" title="2. 具体实践"></a>2. 具体实践</h3><h4 id="2-1-MarkdownEditing"><a href="#2-1-MarkdownEditing" class="headerlink" title="2.1 MarkdownEditing"></a>2.1 <a href="https://github.com/SublimeText-Markdown/MarkdownEditing" target="_blank" rel="external">MarkdownEditing</a></h4><p>一定要全局配置ignored_packages: [“Markdown”]禁用ST默认的Markdown插件，否则MarkdownEditing中看不到代码染色的效果，也不会有GFM的语法增强。</p>
+<ul>
+<li>自动匹配星号（*）、下划线（_）及反引号（`），选中文本按下以上符号能自动在所选文本前后添加配对的符号，方便粗体、斜体和代码框的输入。</li>
+<li>直接输入配对的符号后按下退格键（backspace），则两个符号都会被删除；直接输入配对的符号后按下空格键，则会自动删除后一个。</li>
+<li>拷贝一个链接，选中文本后按下 ctrl+win+v 会自动插入内联链接。</li>
+<li>shift+win+k 插入图片。</li>
+<li>ctrl+1..6:插入相应级别的标题</li>
+<li>alt+shift+6：插入脚注</li>
+<li>ctrl+shift+pageup/pagedown:跳转到前/后一个标题</li>
+<li>ctrl+alt+shift+pageup/pagedown:跳转到前/后一个同级标题</li>
+</ul>
+<h4 id="2-2-Markdown-Preview"><a href="#2-2-Markdown-Preview" class="headerlink" title="2.2 Markdown Preview"></a>2.2 <a href="https://github.com/revolunet/sublimetext-markdown-preview" target="_blank" rel="external">Markdown Preview</a></h4><ul>
+<li>浏览器预览，可自定义快捷键（f6）</li>
+<li>在最前面添加[TOC]可自动生成目录</li>
+<li>需要开启代码染色、MathJax支持才能获得相应功能等。</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div></pre></td><td class="code"><pre><div class="line">&#123;</div><div class="line">    /* Sets the parser used for building markdown to HTML. */</div><div class="line">    &quot;parser&quot;: &quot;github&quot;,</div><div class="line">    /* Enable or not mathjax support. */</div><div class="line">    &quot;enable_mathjax&quot;: true,</div><div class="line">    &quot;enable_uml&quot;: true,</div><div class="line">    &quot;enable_highlight&quot;: true,</div><div class="line">    &quot;enabled_parsers&quot;: [&quot;github&quot;, &quot;markdown&quot;],</div><div class="line">    &quot;github_mode&quot;: &quot;markdown&quot;,</div><div class="line">    &quot;github_inject_header_ids&quot;: true,</div><div class="line">    &quot;enable_autoreload&quot;: false,</div><div class="line">    &quot;strip_yaml_front_matter&quot;: true,</div><div class="line">    &quot;enabled_extensions&quot;: [</div><div class="line">            &quot;extra&quot;,</div><div class="line">            &quot;github&quot;,</div><div class="line">            &quot;codehilite(guess_lang=False,pygments_style=github)&quot;</div><div class="line">        ]</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<pre><code>尝试一下，在md文件中输入：   
+$$x^{y^z}=(1+{\rm e}^x)^{-2xy^w}$$   
+如果MathJax配置成功的话，就能看到数学公式:
+</code></pre><p>$$x^{y^z}=(1+{\rm e}^x)^{-2xy^w}$$</p>
+<p>行间公式</p>
+<pre><code>$$x=\frac{-b\pm\sqrt{b^2-4ac}}{2a}$$
+</code></pre><p>显示为</p>
+<p>$$x=\frac{-b\pm\sqrt{b^2-4ac}}{2a}$$</p>
+<p>行内公式</p>
+<pre><code>\\(x=\frac{-b\pm\sqrt{b^2-4ac}}{2a}\\)
+</code></pre><p>显示为<br>\(x=\frac{-b\pm\sqrt{b^2-4ac}}{2a}\)</p>
+<pre><code>更加完整的MathJax语法请参考[官方文档](http://mathjax-chinese-doc.readthedocs.org/en/latest/start.html)。
+</code></pre><h4 id="2-3-Table-Editor"><a href="#2-3-Table-Editor" class="headerlink" title="2.3 Table Editor"></a>2.3 <a href="https://github.com/vkocubinsky/SublimeTableEditor" target="_blank" rel="external">Table Editor</a></h4><ul>
+<li>通过<kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>P</kbd>-&gt;<code>Table Editor: Enable for current systax</code>开启。</li>
+<li>先输入标题行，回车后在第二行输入<code>|-</code>后，按<kbd>tab</kbd>键就将进入Table编辑模式。</li>
+<li>表格必须与前面输入的文字之间有空行，否则表格会被当成普通文字渲染。</li>
+</ul>
+<h4 id="2-4-MarkdownTOC"><a href="#2-4-MarkdownTOC" class="headerlink" title="2.4 MarkdownTOC"></a>2.4 <a href="https://github.com/naokazuterada/MarkdownTOC" target="_blank" rel="external">MarkdownTOC</a></h4><ul>
+<li>在最前面点击工具&gt;MarkdownTOC&gt;insert TOC生成TOC目录（当前文件可见；上一个当前文件不显示，只在浏览器显示；）</li>
+<li>在设置中禁用uri_encoding即可解决<del>中文乱码</del></li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div></pre></td><td class="code"><pre><div class="line">&#123;    </div><div class="line">// 自动链接，可实时更新</div><div class="line">&quot;default_autolink&quot;: true,</div><div class="line">// 设置链接为圆括号</div><div class="line">&quot;default_bracket&quot;: &quot;round&quot;,</div><div class="line">// 显示层次无限</div><div class="line">&quot;default_depth&quot;: 0,</div><div class="line">// 避免中文乱码</div><div class="line">&quot;default_uri_encoding&quot;: false,</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;h2 id=&quot;sublimetext-markkdown实践&quot;&gt;&lt;a href=&quot;#sublimetext-markkdown实践&quot; class=&quot;headerlink&quot; title=&quot;sublimetext-markkdown实践&quot;&gt;&lt;/a&gt;sublimetext-markk
+    
+    </summary>
+    
+      <category term="学习" scheme="https://foodish.github.io/categories/%E5%AD%A6%E4%B9%A0/"/>
+    
+    
+      <category term="markdown, sublimetext" scheme="https://foodish.github.io/tags/markdown-sublimetext/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Markdown语法</title>
+    <link href="https://foodish.github.io/2017/05/29/markdown%E8%AF%AD%E6%B3%95/"/>
+    <id>https://foodish.github.io/2017/05/29/markdown语法/</id>
+    <published>2017-05-28T16:00:00.000Z</published>
+    <updated>2017-05-30T16:00:00.000Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="Markdown语法"><a href="#Markdown语法" class="headerlink" title="Markdown语法"></a>Markdown语法</h1><!-- MarkdownTOC -->
+<ul>
+<li><a href="#0-缘起">0. 缘起</a></li>
+<li><a href="#1-基本语法">1. 基本语法</a><ul>
+<li><a href="#10-反斜杠">1.0 反斜杠</a></li>
+<li><a href="#11-标题">1.1 标题</a></li>
+<li><a href="#12-加粗和斜体">1.2 加粗和斜体</a></li>
+<li><a href="#13-键盘按键">1.3 键盘按键</a></li>
+<li><a href="#14-列表">1.4 列表</a></li>
+<li><a href="#15-链接和图片">1.5 链接和图片</a></li>
+<li><a href="#16-数学公式">1.6 数学公式</a></li>
+<li><a href="#17-引用">1.7 引用</a></li>
+<li><a href="#18-代码">1.8 代码</a></li>
+<li><a href="#19-分割线">1.9 分割线</a></li>
+</ul>
+</li>
+<li><a href="#2-github-flavored-markdown">2. GitHub Flavored Markdown</a><ul>
+<li><a href="#21-下划线">2.1 下划线</a></li>
+<li><a href="#22-删除线">2.2 删除线</a></li>
+<li><a href="#23-语法高亮">2.3 语法高亮</a></li>
+<li><a href="#24-task任务（~~未渲染成功~~-注意中间有空格）">2.4 task任务（<del>未渲染成功</del> 注意[]中间有空格）</a></li>
+<li><a href="#25-添加表情（~~未成功~~-不要用中文冒号）">2.5 添加表情（<del>未成功</del> 不要用中文冒号）</a></li>
+<li><a href="#26-增强表格">2.6 增强表格</a></li>
+</ul>
+</li>
+</ul>
+<!-- /MarkdownTOC -->
+<h2 id="0-缘起"><a href="#0-缘起" class="headerlink" title="0. 缘起"></a>0. 缘起</h2><p>断断续续尝试过Markdown写作，不过最后都没能坚持下来。最近在折腾SublimeText3，顺便折腾了一遍相关Markdown插件，又激起了再次尝试Markdown的想法。再加上此前折腾的托管在github上的博客，也顺理成章应该选择Markdown书写。</p>
+<p>Markdown的特点：</p>
+<ul>
+<li><strong>专注写作内容</strong>：不再纠结字体、标题大小、行间距等等版式问题，专注于文章内容本身的编写。</li>
+<li><strong>代码语法高亮</strong></li>
+<li><strong>插入数学公式</strong>：Markdown可借助MathJax实现（还没学..）。</li>
+<li><strong>文件占用空间小</strong>：<code>.md</code>因为是纯文本文件，所以很小巧。</li>
+</ul>
+<p>由于是初学，现在感觉有些地方还不太方便。</p>
+<ul>
+<li>插入图片不方便，本地图片发布到网络前要上传图床</li>
+<li>LaTeX没学过，插入公式也感觉麻烦</li>
+<li>表格插入也不方便</li>
+</ul>
+<h2 id="1-基本语法"><a href="#1-基本语法" class="headerlink" title="1. 基本语法"></a>1. 基本语法</h2><h3 id="1-0-反斜杠"><a href="#1-0-反斜杠" class="headerlink" title="1.0 反斜杠"></a>1.0 反斜杠</h3><p><strong>Markdown 支持在符号前面加上反斜杠来帮助插入普通的符号</strong></p>
+<h3 id="1-1-标题"><a href="#1-1-标题" class="headerlink" title="1.1 标题"></a>1.1 标题</h3><pre><code>从#到######表示h1到h6，如
+ # h1
+## h2
+### h3
+#后不加空格也一样，但加空格是最标准的写法
+</code></pre><h3 id="1-2-加粗和斜体"><a href="#1-2-加粗和斜体" class="headerlink" title="1.2 加粗和斜体"></a>1.2 加粗和斜体</h3><pre><code>- 两个*或_之间的文字会变为斜体
+- 两个**或__之间的文字会加粗
+- 两个`之间的文字会强调
+如
+*斜体*
+_斜体_
+**粗体**
+__粗体__
+`强调`
+</code></pre><p>显示效果如下：</p>
+<p><em>斜体</em><br><em>斜体</em></p>
+<p><strong>粗体</strong><br><strong>粗体</strong></p>
+<p><code>强调</code></p>
+<h3 id="1-3-键盘按键"><a href="#1-3-键盘按键" class="headerlink" title="1.3 键盘按键"></a>1.3 键盘按键</h3><pre><code>在&lt;kbd&gt;和&lt;/kbd&gt;之间的字母会像键盘按键那样显示，例如&lt;kbd&gt;Ctrl&lt;/kbd&gt;显示效果如下：
+</code></pre><p><kbd>Ctrl</kbd></p>
+<h3 id="1-4-列表"><a href="#1-4-列表" class="headerlink" title="1.4 列表"></a>1.4 列表</h3><pre><code>-、+、*都能表示列表
+有序列表则在文字前加序号1. 2. 3. 
+要注意的是文字前要有1个空格，列表前后都要有空行，如下
+
+* bullets can be `-`, `+`, or `*`
+* bullet list 1
+* bullet list 2   
+    * sub item 1
+    * sub item 2
+
+1. bullet 1
+2. bullet 2
+</code></pre><ul>
+<li>bullets can be <code>-</code>, <code>+</code>, or <code>*</code></li>
+<li>bullet list 1</li>
+<li>bullet list 2   <ul>
+<li>sub item 1</li>
+<li>sub item 2</li>
+</ul>
+</li>
+</ul>
+<ol>
+<li>bullet 1</li>
+<li>bullet 2</li>
+</ol>
+<h3 id="1-5-链接和图片"><a href="#1-5-链接和图片" class="headerlink" title="1.5 链接和图片"></a>1.5 链接和图片</h3><pre><code>图片、网址、章节引用的方法都类似，语法是：[显示文字](reference)。其中
+reference 可以是：图片链接、网址链接、#章节标题。图片时最前面加一个！
+目前还不知道有什么方法能嵌入本地图片。
+如
+[雪球](http://xueqiu.com)
+[1.3 键盘按键](### 1.3 键盘按键)
+![图片名](图片链接地址)
+</code></pre><p><a href="http://xueqiu.com" target="_blank" rel="external">雪球</a><br><a href="### 1.3 键盘按键">1.3 键盘按键</a></p>
+<h3 id="1-6-数学公式"><a href="#1-6-数学公式" class="headerlink" title="1.6 数学公式"></a>1.6 数学公式</h3><p>latex公式</p>
+<h3 id="1-7-引用"><a href="#1-7-引用" class="headerlink" title="1.7 引用"></a>1.7 引用</h3><pre><code>在引用的文字前加&gt; 即可，如
+&gt; 这里是引用文字
+效果如下 
+</code></pre><blockquote>
+<p>这里是引用文字</p>
+</blockquote>
+<h3 id="1-8-代码"><a href="#1-8-代码" class="headerlink" title="1.8 代码"></a>1.8 代码</h3><pre><code>插入代码块只需要单地缩进 4 个空格或是 1 个制表符即可，即按下tab即可
+
+需要引用代码时，如果引用的语句只有一段，不分行，可以用 ` 将语句包起来。
+如果引用的语句为多行，可以将<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">如</div><div class="line"></div><div class="line">`if a &lt; b: a = 1 else a = 2`</div></pre></td></tr></table></figure>
+
+if a &lt; b :
+    a = 1
+else
+    a = 2
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">    效果如下</div><div class="line"></div><div class="line">`if a &lt; b: a = 1 else a = 2`</div></pre></td></tr></table></figure>
+</code></pre><p>if a &lt; b :<br>    a = 1<br>else<br>    a = 2<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div><div class="line">40</div><div class="line">41</div><div class="line">42</div><div class="line">43</div><div class="line">44</div></pre></td><td class="code"><pre><div class="line"></div><div class="line">### 1.9 分割线</div><div class="line"></div><div class="line">    在一行中用三个以上的星号、减号、底线来建立一个分隔线，行内不能有其他东西。你也可以在星号或是减号中间插入空格。如</div><div class="line">    ***</div><div class="line">    ---</div><div class="line">    ___</div><div class="line">    * * *</div><div class="line">    效果如下：</div><div class="line"></div><div class="line">***</div><div class="line"></div><div class="line">---</div><div class="line"></div><div class="line">___</div><div class="line"></div><div class="line">* * * </div><div class="line"></div><div class="line">## 2. GitHub Flavored Markdown</div><div class="line"></div><div class="line">参考[github官方文档](https://help.github.com/categories/writing-on-github/)</div><div class="line"></div><div class="line">GFM使用了[Linguist](https://github.com/github/linguist)进行语言检测和语法高亮，能为几乎各种语言渲染出漂亮的样式。</div><div class="line"></div><div class="line">### 2.1 下划线</div><div class="line"></div><div class="line">单词中如果有_的话，GFM会忽略，而不会变成斜体！例如，单词wow_great_stuff中的great不会变成斜体。</div><div class="line"></div><div class="line"></div><div class="line">### 2.2 删除线</div><div class="line">    </div><div class="line">    文字放在一组~~之间即可，如</div><div class="line">    ~~删除线~~</div><div class="line">    效果如下</div><div class="line"></div><div class="line">~~删除线~~</div><div class="line"></div><div class="line">### 2.3 语法高亮</div><div class="line"></div><div class="line">    可以在```之间敲入代码，并提示编程语言，例如python。</div><div class="line"></div><div class="line">    ```python</div><div class="line">    if a &lt; 1:</div><div class="line">        print(a)</div></pre></td></tr></table></figure></p>
+<pre><code>效果如下：
+</code></pre><figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">if</span> a &lt; <span class="number">1</span>:</div><div class="line">    print(a)</div></pre></td></tr></table></figure>
+<h3 id="2-4-task任务（未渲染成功-注意-中间有空格）"><a href="#2-4-task任务（未渲染成功-注意-中间有空格）" class="headerlink" title="2.4 task任务（未渲染成功 注意[]中间有空格）"></a>2.4 task任务（<del>未渲染成功</del> 注意[]中间有空格）</h3><p>将列表变成带勾选的任务列表(微测试成功)，嵌套列表</p>
+<pre><code>- [ ] task list
+- [ ] list systax required
+- [ ] normal ** formatting**, @mentions, #1234 refs
+- [ ] incomplete
+- [x] complete
+</code></pre><p>效果如下</p>
+<ul>
+<li>[ ] task list</li>
+<li>[ ] list systax required</li>
+<li>[ ] normal <strong>formatting</strong>,@mentions,#1234 refs</li>
+<li>[ ] incomplete</li>
+<li>[x] complete</li>
+</ul>
+<h3 id="2-5-添加表情（未成功-不要用中文冒号）"><a href="#2-5-添加表情（未成功-不要用中文冒号）" class="headerlink" title="2.5 添加表情（未成功 不要用中文冒号）"></a>2.5 添加表情（<del>未成功</del> 不要用中文冒号）</h3><p>GFM支持添加emoji表情,输入不同的符号码表示不同的表情</p>
+<pre><code>：blush：
+：joy：
+：grinning：
+</code></pre><p>效果</p>
+<p>:blush:<br>:joy:<br>:grinning:</p>
+<h3 id="2-6-增强表格"><a href="#2-6-增强表格" class="headerlink" title="2.6 增强表格"></a>2.6 增强表格</h3><ul>
+<li>竖线可以不对齐</li>
+<li>可以定义表格中文字对齐方式</li>
+<li>表格可以嵌入图片</li>
+</ul>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;h1 id=&quot;Markdown语法&quot;&gt;&lt;a href=&quot;#Markdown语法&quot; class=&quot;headerlink&quot; title=&quot;Markdown语法&quot;&gt;&lt;/a&gt;Markdown语法&lt;/h1&gt;&lt;!-- MarkdownTOC --&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;#0
+    
+    </summary>
+    
+      <category term="学习" scheme="https://foodish.github.io/categories/%E5%AD%A6%E4%B9%A0/"/>
+    
+    
+      <category term="markdown" scheme="https://foodish.github.io/tags/markdown/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>sublimetext总结-Python</title>
+    <link href="https://foodish.github.io/2017/05/29/sublimetext%E6%80%BB%E7%BB%93-Python/"/>
+    <id>https://foodish.github.io/2017/05/29/sublimetext总结-Python/</id>
+    <published>2017-05-28T16:00:00.000Z</published>
+    <updated>2017-05-30T16:00:00.000Z</updated>
+    
+    <content type="html"><![CDATA[<!-- MarkdownTOC -->
+<ul>
+<li><a href="#常用快捷键（包括部分插件）">常用快捷键（包括部分插件）</a><ul>
+<li><a href="#系统快捷键">系统快捷键</a></li>
+<li><a href="#插件快捷键需要setting中配置">插件快捷键(需要setting中配置)</a></li>
+</ul>
+</li>
+<li><a href="#插件">插件</a><ul>
+<li><a href="#通用插件">通用插件</a><ul>
+<li><a href="#advanced-new-file">Advanced New File</a></li>
+<li><a href="#cndict">Cndict</a></li>
+<li><a href="#chinesewordcounter">chineseWordCounter</a></li>
+<li><a href="#hiveopener">HiveOpener</a></li>
+<li><a href="#open-url">Open URL</a></li>
+<li><a href="#plaintasks">PlainTasks</a></li>
+<li><a href="#sidebar-enhancements">Sidebar Enhancements</a></li>
+<li><a href="#sublimeevernote">SublimeEvernote</a></li>
+<li><a href="#sublimetmpl">SublimeTmpl</a></li>
+<li><a href="#git">git</a></li>
+<li><a href="#gitgutter">GitGutter</a></li>
+</ul>
+</li>
+<li><a href="#markdown插件">Markdown插件</a><ul>
+<li><a href="#markdownediting">MarkdownEditing</a></li>
+<li><a href="#markdown-preview">Markdown Preview</a></li>
+<li><a href="#markdowntoc">MarkdownTOC</a></li>
+<li><a href="#table-editor">Table Editor</a></li>
+</ul>
+</li>
+<li><a href="#ide插件">IDE插件</a><ul>
+<li><a href="#aligntab">AlignTab</a></li>
+<li><a href="#anaconda">Anaconda</a></li>
+<li><a href="#sublimerepl">SublimeREPL</a></li>
+<li><a href="#sublime-terminal">Sublime Terminal</a></li>
+<li><a href="#sqltools">SQLTools</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<!-- /MarkdownTOC -->
+<h2 id="常用快捷键（包括部分插件）"><a href="#常用快捷键（包括部分插件）" class="headerlink" title="常用快捷键（包括部分插件）"></a>常用快捷键（包括部分插件）</h2><h3 id="系统快捷键"><a href="#系统快捷键" class="headerlink" title="系统快捷键"></a>系统快捷键</h3><ol>
+<li>查找切换文件：ctrl+p</li>
+<li>跳转标记：ctrl+r</li>
+<li>左右分屏：alt+shift+2,恢复单页面ctrl+shift+1</li>
+<li>上下分屏：alt+shift+8</li>
+<li>选中当前行：ctrl+l，继续操作（等同于shift+↓）选择下一行</li>
+<li>同时编辑多行：ctrl+shift+l<br> 选中要编辑的多行文本，按下快捷键将在行尾出现光标，可同时编辑多行</li>
+<li>多行编辑：shift+rightclick，向右选中对齐的多行进行编辑</li>
+<li>从光标位置起向前选中一行或多行：shift+↑</li>
+<li>从光标位置起向后选中一行或多行：shift+↓</li>
+<li>删除当前行：ctrl+shift+k</li>
+<li>就近选择相同项：ctrl+d<br>把光标放在一个单词上，按下ctrl+d，将选择这个单词。一直按住ctrl且按D多次，将选择当前选中项的下一个匹配项。通过按住ctrl，再按D三次，将选择三个相同的文本。</li>
+<li>选择当前文件所有匹配项: alt+f3</li>
+<li>整行的上下移动: ctrl+shift+↑或 ctrl+shift+↓</li>
+<li>增加和减少缩进: ctrl+] 或 [</li>
+<li>大写和小写: 大写ctrl+k+u、小写ctrl+k+l</li>
+<li>全屏模式：f11</li>
+<li>无干扰模式：shift+f11<br><del>复制当前行：ctrl+shift+d</del></li>
+</ol>
+<h3 id="插件快捷键-需要setting中配置"><a href="#插件快捷键-需要setting中配置" class="headerlink" title="插件快捷键(需要setting中配置)"></a>插件快捷键(需要setting中配置)</h3><ul>
+<li>f1：sidebar；在chrome打开</li>
+<li>f4：sublimeREPL；打开Python控制台（相当于命令行输入Python指令）</li>
+<li>f5：sublimeREPL：运行Python程序</li>
+<li>f6：markdown preview；预览markdown</li>
+<li>f12:HiveOpener;打开收藏网址列表</li>
+<li>ctrl+shift+m:sublimetmpl；以tmpl模板创建md文件<del>出现问题：快捷键无反应</del></li>
+<li>ctrl+shift+n：sublimetmpl；以tmpl模板创建py文件</li>
+<li>ctrl+shift+t：terminal；打开控制台；</li>
+<li>ctrl+alt+y：cndict；中英文翻译；选中文本后按下快捷键翻译</li>
+<li>ctrl+alt+r：anaconda；自动pep8格式化</li>
+<li>ctrl+alt+n：advancedNewFile；快速创建文件</li>
+<li>ctrl+alt+i:HiveOpener;添加/移除到打开列表</li>
+<li>ctrl+alt+o:HiveOpener;显示打开列表</li>
+</ul>
+<h2 id="插件"><a href="#插件" class="headerlink" title="插件"></a>插件</h2><h3 id="通用插件"><a href="#通用插件" class="headerlink" title="通用插件"></a>通用插件</h3><p>第三方插件基于相同的api创建，因此其设置基本相同。设置文件为json格式，基本内容如下：</p>
+<p><strong>Settings</strong></p>
+<ul>
+<li>Settings - Default</li>
+<li>Settings - User</li>
+</ul>
+<p>Default Settings包含了插件的所有可选设置并设置了默认值，User Settings 则提供了更改初始设置的入口。User Setings 的优先级高于Default Settings，因此当User Settings中包含了与Default Settings相同的选项时，将使用该设置而非默认设置。</p>
+<blockquote>
+<p>Note: 插件设置应该在User Settings进行，避免因插件升级等造成设置文件丢失</p>
+</blockquote>
+<p><strong>Key Bindings</strong></p>
+<ul>
+<li>Key Brindings - Default</li>
+<li>Key Brindings - User</li>
+</ul>
+<p>Key Brindings 即快捷键绑定，跟设置类似，但部分插件可能没有</p>
+<h4 id="Advanced-New-File"><a href="#Advanced-New-File" class="headerlink" title="Advanced New File"></a>Advanced New File</h4><p><a href="https://github.com/skuroda/Sublime-AdvancedNewFile" target="_blank" rel="external">Advanced New File</a>用来快速创建文档，还可以同时创建文件夹和路径，如：</p>
+<ul>
+<li>ctrl+alt+n 创建新的文件。此时底部状态栏会出现输入框，在其中输入文件名或路径即可。如输入test.py，将在当前目录下创建test.py文件。输入myfolder/mysubfolder/test.py,则将在当前目录下创建myfolder文件夹、mysubfolder子文件夹和test.py文件。</li>
+<li>ctrl+shift+alt+n 除了创建一个指定的文件夹外，还会自动在文件夹中创建<strong>init</strong>.py文件。如输入myfolder/test.py，此时myfolder中还包含了<strong>init</strong>.py文件</li>
+</ul>
+<blockquote>
+<p>setting中可配置默认的文件路径、文件扩展名等</p>
+</blockquote>
+<h4 id="Cndict"><a href="#Cndict" class="headerlink" title="Cndict"></a>Cndict</h4><p><a href="https://github.com/divinites/cndict" target="_blank" rel="external">Chinese-English Bilingual Dictionary</a>提供中英文翻译</p>
+<ul>
+<li>选中单词后，ctrl+alt+y即调出有道翻译的界面； <del>ctrl+alt+c为金山词霸</del> 未成功</li>
+<li>可自定义翻译的显示方式</li>
+</ul>
+<h4 id="chineseWordCounter"><a href="#chineseWordCounter" class="headerlink" title="chineseWordCounter"></a>chineseWordCounter</h4><p><a href="https://github.com/rookiecalf/chineseWordCounter" target="_blank" rel="external">chineseWordCounter</a> 中文汉字、英文单词等字数统计，参照LaTeX Word Count（不支持中文）</p>
+<h4 id="HiveOpener"><a href="#HiveOpener" class="headerlink" title="HiveOpener"></a>HiveOpener</h4><p><a href="https://github.com/miusuncle/HiveOpener" target="_blank" rel="external">HiveOpener</a><br>快速打开网址、文件、文件夹等，可当做收藏夹使用</p>
+<ul>
+<li>ctrl+alt+i:HiveOpener;添加/移除到打开列表</li>
+<li>ctrl+alt+o:HiveOpener;显示打开列表</li>
+</ul>
+<h4 id="Open-URL"><a href="#Open-URL" class="headerlink" title="Open URL"></a>Open URL</h4><p><a href="https://github.com/noahcoad/open-url/" target="_blank" rel="external">Open URL</a> 可快速打开网址、文件夹、文件等</p>
+<ul>
+<li>选中文本后，右键open url，可智能判断是打开网页或者google所选择的文本</li>
+</ul>
+<h4 id="PlainTasks"><a href="#PlainTasks" class="headerlink" title="PlainTasks"></a>PlainTasks</h4><p><a href="https://github.com/aziz/PlainTasks" target="_blank" rel="external">PlainTasks</a> 强大的to-do应用，基本上能想到的功能都有了</p>
+<h4 id="Sidebar-Enhancements"><a href="#Sidebar-Enhancements" class="headerlink" title="Sidebar Enhancements"></a>Sidebar Enhancements</h4><p><a href="https://github.com/titoBouzout/SideBarEnhancements" target="_blank" rel="external">Sidebar Enhancements</a>给侧边栏增加了很多有用的功能，如更改delete行为为（移到垃圾箱）open with、剪切板等。</p>
+<ul>
+<li>基本功能：新建文件/文件夹，编辑，打开/运行，查找/高级查找，剪切，复制，粘贴，删除等</li>
+<li>高级功能：copy paths as URIs, URLs, content as UTF8等</li>
+</ul>
+<blockquote>
+<p>Note:可设置状态栏显示”file modified date” 和 “file size”</p>
+</blockquote>
+<h4 id="SublimeEvernote"><a href="#SublimeEvernote" class="headerlink" title="SublimeEvernote"></a>SublimeEvernote</h4><p><a href="https://github.com/bordaigorl/sublime-evernote" target="_blank" rel="external">SublimeEvernote</a> evernote插件，需要获取印象笔记api token</p>
+<h4 id="SublimeTmpl"><a href="#SublimeTmpl" class="headerlink" title="SublimeTmpl"></a>SublimeTmpl</h4><p><a href="https://github.com/kairyou/SublimeTmpl" target="_blank" rel="external">SublimeTmpl</a>用于创建文件模板</p>
+<ul>
+<li>setting中attr字段可自定义插入信息,形如<br>  “attr”: {<pre><code>    &quot;author&quot;: &quot;Your Name&quot; ,
+    &quot;email&quot;: &quot;you@example.org&quot;,
+    &quot;link&quot;: &quot;http://example.org&quot;,
+    &quot;hello&quot;: &quot;word&quot;
+}
+</code></pre></li>
+<li>支持自动插入日期</li>
+<li>支持自动插入 <del>保存文件名未成功</del> </li>
+</ul>
+<h4 id="git"><a href="#git" class="headerlink" title="git"></a>git</h4><p><a href="https://github.com/kemayo/sublime-text-git" target="_blank" rel="external">git</a>包含了基本的git操作，init,clone,add,commit,push,pull等</p>
+<ul>
+<li>ctrl+shift+p后输入git进行操作</li>
+</ul>
+<h4 id="GitGutter"><a href="#GitGutter" class="headerlink" title="GitGutter"></a>GitGutter</h4><p><a href="https://github.com/jisaacks/GitGutter" target="_blank" rel="external">GitGutter</a> 可以很清楚显示出对文件所作出做出的改动</p>
+<h3 id="Markdown插件"><a href="#Markdown插件" class="headerlink" title="Markdown插件"></a>Markdown插件</h3><h4 id="MarkdownEditing"><a href="#MarkdownEditing" class="headerlink" title="MarkdownEditing"></a>MarkdownEditing</h4><p><a href="https://github.com/SublimeText-Markdown/MarkdownEditing" target="_blank" rel="external">MarkdownEditing</a></p>
+<ul>
+<li>自动匹配星号（*）、下划线（_）及反引号（`），选中文本按下以上符号能自动在所选文本前后添加配对的符号，方便粗体、斜体和代码框的输入。</li>
+<li>直接输入配对的符号后按下退格键（backspace），则两个符号都会被删除；直接输入配对的符号后按下空格键，则会自动删除后一个。</li>
+<li>拷贝一个链接，选中文本后按下 ctrl+win+v 会自动插入内联链接。</li>
+<li>shift+win+k 插入图片。</li>
+<li>ctrl+1..6:插入相应级别的标题</li>
+<li>alt+shift+6：插入脚注</li>
+<li>ctrl+shift+pageup/pagedown:跳转到前/后一个标题</li>
+<li>ctrl+alt+shift+pageup/pagedown:跳转到前/后一个同级标题</li>
+</ul>
+<h4 id="Markdown-Preview"><a href="#Markdown-Preview" class="headerlink" title="Markdown Preview"></a>Markdown Preview</h4><p><a href="https://github.com/revolunet/sublimetext-markdown-preview" target="_blank" rel="external">Markdown Preview</a>可输出html文件及在浏览器预览</p>
+<ul>
+<li>浏览器预览，可自定义快捷键（f6）</li>
+<li>在最前面添加[TOC]可自动生成目录</li>
+</ul>
+<h4 id="MarkdownTOC"><a href="#MarkdownTOC" class="headerlink" title="MarkdownTOC"></a>MarkdownTOC</h4><p><a href="https://github.com/naokazuterada/MarkdownTOC" target="_blank" rel="external">MarkdownTOC</a>用于生成目录</p>
+<ul>
+<li>在最前面点击工具&gt;MarkdownTOC&gt;insert TOC生成TOC目录（当前文件可见；上一个当前文件不显示，只在浏览器显示；）</li>
+<li>在设置中禁用uri_encoding即可解决<del>中文乱码</del></li>
+</ul>
+<h4 id="Table-Editor"><a href="#Table-Editor" class="headerlink" title="Table Editor"></a>Table Editor</h4><p><a href="https://github.com/vkocubinsky/SublimeTableEditor" target="_blank" rel="external">Table Editor</a> 很方便的markdown表格编辑工具</p>
+<h3 id="IDE插件"><a href="#IDE插件" class="headerlink" title="IDE插件"></a>IDE插件</h3><h4 id="AlignTab"><a href="#AlignTab" class="headerlink" title="AlignTab"></a>AlignTab</h4><p><a href="https://github.com/randy3k/AlignTab" target="_blank" rel="external">AlignTab</a>用于快速对齐文本</p>
+<ul>
+<li>简单版：选中需要对齐的文本，右键选择Align By即可根据:=&amp;等进行对齐</li>
+<li>高级应用：采用正则表达式进行对齐</li>
+<li>表格编辑中可用<blockquote>
+<p>Note：中文支持问题：右键不可用，ctrl+shift+p调出菜单后输入对应的全角符号</p>
+</blockquote>
+</li>
+</ul>
+<h4 id="Anaconda"><a href="#Anaconda" class="headerlink" title="Anaconda"></a>Anaconda</h4><p><a href="https://github.com/DamnWidget/anaconda" target="_blank" rel="external">Anaconda</a> 完美的Python IDE，此外也有Go，Rust，PHP版本</p>
+<ul>
+<li>集合了众多Python插件，包括jedi/autopep8/PyFlakes等</li>
+<li><p>代码补全、错误提示、进行调试等</p>
+<ul>
+<li><p>.补全（方法等补全）需要设置</p>
+<p>  “auto_complete_triggers”:[{“selector”: “source.python - string - comment - constant.numeric”, “characters”: “.”}]</p>
+</li>
+</ul>
+</li>
+<li><p>ctrl+alt+r:自动规范为pep格式</p>
+</li>
+<li>可配置python及外部库位置，自定义需要忽略的pep8规范等</li>
+</ul>
+<h4 id="SublimeREPL"><a href="#SublimeREPL" class="headerlink" title="SublimeREPL"></a>SublimeREPL</h4><p><a href="https://github.com/wuub/SublimeREPL" target="_blank" rel="external">SublimeREPL</a>交互式运行程序</p>
+<ul>
+<li>提供交互式终端，如Python中input()自带编译系统无法输入文本</li>
+<li>历史记录功能等</li>
+</ul>
+<h4 id="Sublime-Terminal"><a href="#Sublime-Terminal" class="headerlink" title="Sublime Terminal"></a>Sublime Terminal</h4><p><a href="https://github.com/wbond/sublime_terminal" target="_blank" rel="external">Sublime Terminal</a> 在sublime中打开终端</p>
+<ul>
+<li>ctrl+shift+t</li>
+<li>可设置打开的终端，如powershell，cmder</li>
+</ul>
+<h4 id="SQLTools"><a href="#SQLTools" class="headerlink" title="SQLTools"></a>SQLTools</h4><p><a href="https://github.com/mtxr/SQLTools" target="_blank" rel="external">SQLTools</a> sql工具，支持mysql,PostgreSQL,oracle,sqlite3等</p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;!-- MarkdownTOC --&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;#常用快捷键（包括部分插件）&quot;&gt;常用快捷键（包括部分插件）&lt;/a&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;#系统快捷键&quot;&gt;系统快捷键&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#插件快捷键需要settin
+    
+    </summary>
+    
+      <category term="学习" scheme="https://foodish.github.io/categories/%E5%AD%A6%E4%B9%A0/"/>
+    
+    
+      <category term="python, sublimetext" scheme="https://foodish.github.io/tags/python-sublimetext/"/>
+    
+  </entry>
   
   <entry>
     <title>test</title>
