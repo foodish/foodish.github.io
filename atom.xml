@@ -165,13 +165,13 @@ $$x=\frac{-b\pm\sqrt{b^2-4ac}}{2a}$$
   </entry>
   
   <entry>
-    <title>sublimetext-markkdown实践</title>
+    <title>sublimetext-markdown实践</title>
     <link href="https://foodish.github.io/2017/05/31/sublimetext-markdown%E5%AE%9E%E8%B7%B5/"/>
     <id>https://foodish.github.io/2017/05/31/sublimetext-markdown实践/</id>
     <published>2017-05-31T12:42:27.000Z</published>
     <updated>2017-05-31T12:42:27.000Z</updated>
     
-    <content type="html"><![CDATA[<h2 id="sublimetext-markkdown实践"><a href="#sublimetext-markkdown实践" class="headerlink" title="sublimetext-markkdown实践"></a>sublimetext-markkdown实践</h2><!-- MarkdownTOC -->
+    <content type="html"><![CDATA[<h2 id="sublimetext-markdown实践"><a href="#sublimetext-markdown实践" class="headerlink" title="sublimetext-markdown实践"></a>sublimetext-markdown实践</h2><!-- MarkdownTOC -->
 <ul>
 <li><a href="#1-所需插件">1. 所需插件</a></li>
 <li><a href="#2-具体实践">2. 具体实践</a><ul>
@@ -227,14 +227,16 @@ $$x^{y^z}=(1+{\rm e}^x)^{-2xy^w}$$
     
     <summary type="html">
     
-      &lt;h2 id=&quot;sublimetext-markkdown实践&quot;&gt;&lt;a href=&quot;#sublimetext-markkdown实践&quot; class=&quot;headerlink&quot; title=&quot;sublimetext-markkdown实践&quot;&gt;&lt;/a&gt;sublimetext-markk
+      &lt;h2 id=&quot;sublimetext-markdown实践&quot;&gt;&lt;a href=&quot;#sublimetext-markdown实践&quot; class=&quot;headerlink&quot; title=&quot;sublimetext-markdown实践&quot;&gt;&lt;/a&gt;sublimetext-markdown
     
     </summary>
     
       <category term="学习" scheme="https://foodish.github.io/categories/%E5%AD%A6%E4%B9%A0/"/>
     
     
-      <category term="markdown, sublimetext" scheme="https://foodish.github.io/tags/markdown-sublimetext/"/>
+      <category term="markdown" scheme="https://foodish.github.io/tags/markdown/"/>
+    
+      <category term="sublimetext" scheme="https://foodish.github.io/tags/sublimetext/"/>
     
   </entry>
   
@@ -620,7 +622,9 @@ else
       <category term="学习" scheme="https://foodish.github.io/categories/%E5%AD%A6%E4%B9%A0/"/>
     
     
-      <category term="python, sublimetext" scheme="https://foodish.github.io/tags/python-sublimetext/"/>
+      <category term="sublimetext" scheme="https://foodish.github.io/tags/sublimetext/"/>
+    
+      <category term="python" scheme="https://foodish.github.io/tags/python/"/>
     
   </entry>
   
@@ -629,7 +633,7 @@ else
     <link href="https://foodish.github.io/2017/03/28/test/"/>
     <id>https://foodish.github.io/2017/03/28/test/</id>
     <published>2017-03-28T10:07:16.064Z</published>
-    <updated>2017-03-28T11:20:27.916Z</updated>
+    <updated>2017-05-31T16:02:42.218Z</updated>
     
     <content type="html"><![CDATA[<blockquote>
 <p>this is a test file</p>
@@ -657,7 +661,7 @@ else
     <link href="https://foodish.github.io/2017/03/26/%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1%E5%85%A5%E9%97%A8-Python/"/>
     <id>https://foodish.github.io/2017/03/26/程序设计入门-Python/</id>
     <published>2017-03-26T14:43:07.000Z</published>
-    <updated>2017-03-28T18:56:27.394Z</updated>
+    <updated>2017-03-28T16:00:00.000Z</updated>
     
     <content type="html"><![CDATA[<blockquote>
 <p>本文是网易云课堂中<a href="http://mooc.study.163.com/learn/HIT-1000002017?tid=2001330005#/learn/announce" target="_blank" rel="external">程序设计入门-Python</a>的课程笔记。</p>
